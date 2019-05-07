@@ -24,7 +24,7 @@ public class Sort {
      * @param data
      */
     public static void quickSort(int[] data){
-        quickSort(data, 0, data.length - 1);
+        quickSort2(data, 0, data.length - 1);
     }
 
     /**
@@ -67,6 +67,7 @@ public class Sort {
 
     /**
      * 快速排序
+     * 两端扫描的方式
      * @param data
      * @param left
      * @param right
@@ -112,5 +113,32 @@ public class Sort {
         data[i] = base;
         quickSort(data, left, i - 1);
         quickSort(data, i + 1, right);
+    }
+
+    /**
+     * 快速排序
+     * 填坑法
+     * @param arr
+     * @param l
+     * @param r
+     */
+    public static void quickSort2(int[] arr, int l, int r){
+        if (l < r){//递归的边界条件，当l==r的时候元素个数为1
+            int pivot = arr[l];
+            int i = l + 1, j = r;
+            while(i < j){
+                    while(i < j && arr[j] > pivot){
+                        j--;
+                    }
+                    arr[i] = arr[j];
+                    while(i < j && arr[i] <= pivot){
+                        i++;
+                    }
+                    arr[j] = arr[i];
+                }
+                arr[i] = pivot;
+                quickSort2(arr, l, i - 1);
+                quickSort2(arr, i + 1, r);
+            }
     }
 }

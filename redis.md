@@ -63,3 +63,10 @@
     5.getbit key index(获取key对应value特定位置的值，这个获取的是对应二进制的值，超过长度或者key不存在就返回0)
     6.mget key key (获取多个key对应的value值)
     7.SETBIT key offset value(设置或者清除对应bit上的值)
+#3.持久化
+####redis的持久化有rdb和aof两种
+    1.rdb
+        rdb redis DataBases
+        
+        
+#4.redis事务
