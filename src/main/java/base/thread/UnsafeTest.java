@@ -6,14 +6,12 @@ import java.lang.reflect.Field;
 
 /**
  * @author Elliot
- * unsafe
+ * unsafe类的学习
+ * unsafe提供了像c++这样操纵内存的能力
  */
 public class UnsafeTest {
-    public static void main(String[] args) {
 
-    }
-
-    private static Unsafe getUnsafe() throws NoSuchFieldException, IllegalAccessException {
+    public static Unsafe getUnsafe() throws NoSuchFieldException, IllegalAccessException {
         Field f = Unsafe.class.getDeclaredField("theUnsafe");
         f.setAccessible(true);
         Unsafe unsafe = (Unsafe)f.get(null);
