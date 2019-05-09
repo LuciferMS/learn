@@ -1,10 +1,11 @@
-package thread.forkjoin;
+package base.thread;
 
 
 import java.util.concurrent.*;
 
 /**
  * @author Elliot
+ * forkJoin框架学习
  */
 public class CountTask extends RecursiveTask<Long> {
 

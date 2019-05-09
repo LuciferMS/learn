@@ -123,7 +123,10 @@ public class Sort {
      * @param r
      */
     public static void quickSort2(int[] arr, int l, int r){
-        if (l < r){//递归的边界条件，当l==r的时候元素个数为1
+        /**
+         * 递归的边界条件，当l==r的时候元素个数为1
+         */
+        if (l < r){
             int pivot = arr[l];
             int i = l + 1, j = r;
             while(i < j){

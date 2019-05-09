@@ -29,7 +29,7 @@ public class ThreadPoolLearn {
          *            3.SynchronousQueue
          * threadFactory: 线程工厂，用来创建线程
          * handler: 表示拒绝策略,有下面四种：
-         *              1.ThreadPoolExecutor.AbortPolicy:丢弃任务并抛出RejectedExecutionException异常。
+         *              1.ThreadPoolExecutor.AbortPolicy:丢弃任务并抛出RejectedExecutionException异常。默认。
          *              2.ThreadPoolExecutor.DiscardPolicy：也是丢弃任务，但是不抛出异常。
          *              3.ThreadPoolExecutor.DiscardOldestPolicy：丢弃队列最前面的任务，然后重新尝试执行任务（重复此过程）
          *              4.ThreadPoolExecutor.CallerRunsPolicy：由调用线程处理该任务
