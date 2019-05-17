@@ -72,6 +72,9 @@ public class ArrayAndListTest {
         System.out.println(intList);
     }
 
+    /**
+     * List转Array
+     */
     @Test
     public void listToArrayTest(){
         List<String> stringList1 = new ArrayList<String>(Arrays.asList(strings));

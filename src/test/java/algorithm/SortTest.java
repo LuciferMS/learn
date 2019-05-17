@@ -41,4 +41,23 @@ public class SortTest {
             System.out.println(i);
         }
     }
+
+    @Test
+    public void buildHeapTest(){
+        int[] data = {1, 4, 5,3 ,2};
+        Sort.buildHeap(data, data.length);
+        for (int i : data) {
+            System.out.println(i);
+        }
+    }
+
+    @Test
+    public void heapSortTest(){
+        int[] data = {1, 4, 5,3 ,2};
+        Sort.heapSort(data, data.length);
+        for (int i : data) {
+            System.out.println(i);
+        }
+    }
+
 }
