@@ -7,6 +7,7 @@ import java.util.TimerTask;
 /**
  * @author Elliot
  * 定时任务测试
+ * 学习资料 https://blog.csdn.net/u013332124/article/details/79603943
  */
 public class TimerTest {
     public static void main(String[] args) {
