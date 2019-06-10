@@ -17,6 +17,7 @@ public class NIOServer {
 
     /**
      * 服务器启动
+     * 相当于绑定端口之后开了一条线程来监听端口的传入事件，并进行相应的处理
      */
     public void start() throws IOException {
         /**

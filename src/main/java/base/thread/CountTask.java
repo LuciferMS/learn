@@ -1,11 +1,11 @@
-package thread.forkjoin;
+package base.thread;
 
-import sun.reflect.misc.FieldUtil;
 
 import java.util.concurrent.*;
 
 /**
  * @author Elliot
+ * forkJoin框架学习
  */
 public class CountTask extends RecursiveTask<Long> {
 

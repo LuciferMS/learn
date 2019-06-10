@@ -24,7 +24,7 @@ public class Sort {
      * @param data
      */
     public static void quickSort(int[] data){
-        quickSort(data, 0, data.length - 1);
+        quickSort2(data, 0, data.length - 1);
     }
 
     /**
@@ -67,6 +67,7 @@ public class Sort {
 
     /**
      * 快速排序
+     * 两端扫描的方式
      * @param data
      * @param left
      * @param right
@@ -112,5 +113,95 @@ public class Sort {
         data[i] = base;
         quickSort(data, left, i - 1);
         quickSort(data, i + 1, right);
+    }
+
+    /**
+     * 快速排序
+     * 填坑法
+     * 这个是错的，改天看看
+     * @param arr
+     * @param l
+     * @param r
+     */
+    public static void quickSort2(int[] arr, int l, int r){
+        /**
+         * 递归的边界条件，当l==r的时候元素个数为1
+         */
+        if (l < r){
+            int pivot = arr[l];
+            int i = l + 1, j = r;
+            while(i < j){
+                    while(i < j && arr[j] > pivot){
+                        j--;
+                    }
+                    arr[i] = arr[j];
+                    while(i < j && arr[i] <= pivot){
+                        i++;
+                    }
+                    arr[j] = arr[i];
+                }
+                arr[i] = pivot;
+                quickSort2(arr, l, i - 1);
+                quickSort2(arr, i + 1, r);
+            }
+    }
+
+    /**
+     * 堆排序
+     * @param arr
+     */
+    public static void heapSort(int[] arr, int node){
+        buildHeap(arr, arr.length);
+        for (int i = arr.length - 1; i > 0; i--) {
+            swap(arr, i, 0);
+            buildHeap(arr, i);
+        }
+    }
+
+    /**
+     * 构建堆
+     * @param arr
+     */
+    public static void buildHeap(int[] arr, int length){
+        for (int i = 0; i < length; i++) {
+            adjustHeap(arr, i, length);
+        }
+    }
+    /**
+     * 调整堆
+     * @param arr
+     * @param length
+     */
+    public static void adjustHeap(int[] arr, int index, int length){
+        int c1 = 0;
+        int c2 = 0;
+        if (index * 2 + 1 < length){
+            c1 = arr[index * 2 + 1];
+        }
+        if ((index + 1) * 2 < length){
+            c2 = arr[(index + 1) * 2];
+        }
+        int max = Math.max(Math.max(arr[index], c1), c2);
+        if (max == arr[index]){
+            return;
+        }
+        else if (max == c1){
+            swap(arr, index, index * 2 + 1);
+        }
+        else if(max == c2){
+            swap(arr, index, (index + 1) * 2);
+        }
+    }
+
+    /**
+     * 交换两个数
+     * @param arr
+     * @param a_index
+     * @param b_index
+     */
+    public static void swap(int[] arr, int a_index, int b_index){
+        int temp = arr[a_index];
+        arr[a_index] = arr[b_index];
+        arr[b_index] = temp;
     }
 }

@@ -60,6 +60,25 @@
     2.select dbindex 切换库
     3.ttl key 获取key的生命周期 -1 表示永久有效，-2 表示已过期
     4.expire key time 设置key的生命周期，时间一过对应的键值对就会被清除，再也访问不到了
+<<<<<<< HEAD
     5.getbit key index获取key对应value特定位置的值，这个获取的是对应二进制的值，超过长度或者key不存在就返回0
     6.mget key key 获取多个key对应的value值
     7.SETBIT key offset value 设置或者清除对应bit上的值
+=======
+    5.getbit key index(获取key对应value特定位置的值，这个获取的是对应二进制的值，超过长度或者key不存在就返回0)
+    6.mget key key (获取多个key对应的value值)
+    7.SETBIT key offset value(设置或者清除对应bit上的值)
+#3.持久化
+####redis的持久化有rdb和aof两种
+    1.rdb
+        rdb redis DataBases
+        
+        
+#4.redis事务
+    1.单独的隔离操作：事务中的所有命令都会序列化、按顺序地执行。事务在执行的过程中，不会被其他客户端发送来的命令请求所打断。
+    2.没有隔离级别的概念：队列中的命令没有提交之前都不会实际的被执行，因为事务提交前任何指令都不会被实际执行，
+      也就不存在”事务内的查询要看到事务里的更新，在事务外查询不能看到”这个让人万分头痛的问题
+    3.不保证原子性：redis同一个事务中如果有一条命令执行失败，其后的命令仍然会被执行，没有回滚
+
+#5.主从复制
+>>>>>>> 89eb1192cf025d558b56747d66b8707350ca54a7
