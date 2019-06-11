@@ -8,4 +8,5 @@ public class LombokTester {
         val test = new LombokTestClass();
         test.subMed();
     }
+
 }

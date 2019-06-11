@@ -1,7 +1,9 @@
 package base;
 
+/**
+ * 关于不可变对象的测试
+ */
 public class FinalTest {
-
 
     static class finalTestClass{
         private final String id;
