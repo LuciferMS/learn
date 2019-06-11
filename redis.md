@@ -1,10 +1,10 @@
 #1.数据类型:
 ##1.1 String类型 
 ####(二进制安全，可以存图片或者序列化的对象，最大可以存512M)
-        1.set name "Elliot"(设置相应的key-value)
-        2.get name(根据key获取value)
-        3.getset name "Shayla"(将给定的key值设置成相应的value,并返回原来的value，类似于HashMap的覆盖操作,如果不存在KEY,就会返回nil)
-        4.getrange name 0 10(获取子串)
+        1.set name "Elliot" 设置键值对
+        2.get name 根据key获取value
+        3.getset name "Shayla" 将给定的key值设置成相应的value,并返回原来的value，类似于HashMap的覆盖操作,如果不存在KEY,就会返回nil
+        4.getrange name 0 10 获取子串
  ##1.2 hash类型 (对应Map类型,对比list，String，kv模式不变，v变成了一个个键值对)
         1.hmset user username "Elliot" password "123456"
         2.hget user username 获取对应的内同
@@ -60,6 +60,11 @@
     2.select dbindex 切换库
     3.ttl key 获取key的生命周期 -1 表示永久有效，-2 表示已过期
     4.expire key time 设置key的生命周期，时间一过对应的键值对就会被清除，再也访问不到了
+<<<<<<< HEAD
+    5.getbit key index获取key对应value特定位置的值，这个获取的是对应二进制的值，超过长度或者key不存在就返回0
+    6.mget key key 获取多个key对应的value值
+    7.SETBIT key offset value 设置或者清除对应bit上的值
+=======
     5.getbit key index(获取key对应value特定位置的值，这个获取的是对应二进制的值，超过长度或者key不存在就返回0)
     6.mget key key (获取多个key对应的value值)
     7.SETBIT key offset value(设置或者清除对应bit上的值)
@@ -76,3 +81,4 @@
     3.不保证原子性：redis同一个事务中如果有一条命令执行失败，其后的命令仍然会被执行，没有回滚
 
 #5.主从复制
+>>>>>>> 89eb1192cf025d558b56747d66b8707350ca54a7
