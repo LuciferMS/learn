@@ -1,4 +1,4 @@
-package base;
+package com.learn.base.exception;
 
 import java.util.List;
 
