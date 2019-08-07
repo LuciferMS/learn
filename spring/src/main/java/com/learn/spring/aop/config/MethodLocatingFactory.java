@@ -3,11 +3,12 @@ package org.litespring.aop.config;
 import java.lang.reflect.Method;
 
 import org.litespring.beans.BeanUtils;
-import org.litespring.beans.exception.NoSuchBeanDefinitionException;
 import org.litespring.beans.factory.BeanFactory;
+import org.litespring.beans.factory.BeanFactoryAware;
+import org.litespring.beans.factory.FactoryBean;
 import org.litespring.util.StringUtils;
 
-public class MethodLocatingFactory {
+public class MethodLocatingFactory  implements FactoryBean<Method>,BeanFactoryAware{
 	
 	private String targetBeanName;
 
@@ -24,7 +25,7 @@ public class MethodLocatingFactory {
 	}
 
 	
-	public void setBeanFactory(BeanFactory beanFactory) throws NoSuchBeanDefinitionException {
+	public void setBeanFactory(BeanFactory beanFactory) {
 		if (!StringUtils.hasText(this.targetBeanName)) {
 			throw new IllegalArgumentException("Property 'targetBeanName' is required");
 		}
@@ -49,6 +50,9 @@ public class MethodLocatingFactory {
 
 	public Method getObject() throws Exception {
 		return this.method;
+	}
+	public Class<?> getObjectType() {
+		return Method.class;
 	}
 
 }

@@ -1,8 +1,12 @@
-package org.litespring.beans.exception;
+package org.litespring.beans.factory;
 
+import org.litespring.beans.BeansException;
 import org.litespring.util.StringUtils;
 
-public class NoSuchBeanDefinitionException extends Exception {
+
+
+public class NoSuchBeanDefinitionException extends BeansException {
+
 	/** Name of the missing bean */
 	private String beanName;
 

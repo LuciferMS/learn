@@ -7,7 +7,7 @@ import java.util.Set;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.litespring.beans.BeanDefinition;
-import org.litespring.beans.exception.BeanDefinitionStoreException;
+import org.litespring.beans.factory.BeanDefinitionStoreException;
 import org.litespring.beans.factory.support.BeanDefinitionRegistry;
 import org.litespring.beans.factory.support.BeanNameGenerator;
 import org.litespring.core.io.Resource;

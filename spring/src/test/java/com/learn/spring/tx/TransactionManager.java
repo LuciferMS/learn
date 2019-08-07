@@ -3,6 +3,7 @@ package org.litespring.tx;
 import org.litespring.util.MessageTracker;
 
 public class TransactionManager {
+	
 	public void start(){
 		System.out.println("start tx");	
 		MessageTracker.addMsg("start tx");
@@ -14,5 +15,5 @@ public class TransactionManager {
 	public void rollback(){
 		System.out.println("rollback tx");
 		MessageTracker.addMsg("rollback tx");
-	}
+	}	
 }

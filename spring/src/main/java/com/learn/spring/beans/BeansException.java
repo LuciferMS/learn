@@ -1,4 +1,4 @@
-package org.litespring.beans.exception;
+package org.litespring.beans;
 
 public class BeansException extends RuntimeException {
 	public BeansException(String msg) {

@@ -2,7 +2,7 @@ package org.litespring.beans.factory.annotation;
 
 import java.lang.reflect.Field;
 
-import org.litespring.beans.exception.BeanCreationException;
+import org.litespring.beans.factory.BeanCreationException;
 import org.litespring.beans.factory.config.AutowireCapableBeanFactory;
 import org.litespring.beans.factory.config.DependencyDescriptor;
 import org.litespring.util.ReflectionUtils;

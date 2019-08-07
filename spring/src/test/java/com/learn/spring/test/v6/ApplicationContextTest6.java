@@ -1,4 +1,4 @@
-package org.litespring.test.v5;
+package org.litespring.test.v6;
 
 import java.util.List;
 
@@ -7,24 +7,19 @@ import org.junit.Before;
 import org.junit.Test;
 import org.litespring.context.ApplicationContext;
 import org.litespring.context.support.ClassPathXmlApplicationContext;
-import org.litespring.service.v5.PetStoreService;
+import org.litespring.service.v6.IPetStoreService;
 import org.litespring.util.MessageTracker;
 
-public class ApplicationContextTestV5 {	
+public class ApplicationContextTest6 {
 	
-	@Before
-	public void setUp(){
-		MessageTracker.clearMsgs();
-	}
+	
+	
 	@Test
-	public void testPlaceOrder() {
+	public void testGetBeanProperty() {
 		
-		ApplicationContext ctx = new ClassPathXmlApplicationContext("petstore-v5.xml");
-		PetStoreService petStore = (PetStoreService)ctx.getBean("petStore");
-		
-		Assert.assertNotNull(petStore.getAccountDao());
-		Assert.assertNotNull(petStore.getItemDao());
-		
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("petstore-v6.xml");
+		IPetStoreService petStore = (IPetStoreService)ctx.getBean("petStore");
+	
 		petStore.placeOrder();
 		
 		List<String> msgs = MessageTracker.getMsgs();
@@ -34,7 +29,12 @@ public class ApplicationContextTestV5 {
 		Assert.assertEquals("place order", msgs.get(1));	
 		Assert.assertEquals("commit tx", msgs.get(2));	
 		
-	}	
+	}
+
+	@Before
+	public void setUp(){
+		MessageTracker.clearMsgs();
+	}
 	
 	
 }

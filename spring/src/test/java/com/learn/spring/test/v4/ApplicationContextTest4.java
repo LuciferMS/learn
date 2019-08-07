@@ -6,7 +6,7 @@ import org.litespring.context.ApplicationContext;
 import org.litespring.context.support.ClassPathXmlApplicationContext;
 import org.litespring.service.v4.PetStoreService;
 
-public class ApplicationContextTestV4 {
+public class ApplicationContextTest4 {
 
 	@Test
 	public void testGetBeanProperty() {
@@ -14,8 +14,7 @@ public class ApplicationContextTestV4 {
 		PetStoreService petStore = (PetStoreService)ctx.getBean("petStore");
 		
 		Assert.assertNotNull(petStore.getAccountDao());
-		Assert.assertNotNull(petStore.getItemDao());		
+		Assert.assertNotNull(petStore.getItemDao());
 		
-	}
-
+	}	
 }

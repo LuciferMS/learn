@@ -1,7 +1,5 @@
 package org.litespring.beans;
 
-import org.litespring.beans.exception.TypeMismatchException;
-
 public interface TypeConverter {
 
 

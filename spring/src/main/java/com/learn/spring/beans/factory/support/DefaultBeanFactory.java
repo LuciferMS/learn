@@ -8,20 +8,23 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.litespring.beans.BeanDefinition;
+import org.litespring.beans.BeansException;
 import org.litespring.beans.PropertyValue;
 import org.litespring.beans.SimpleTypeConverter;
-import org.litespring.beans.exception.BeanCreationException;
-import org.litespring.beans.exception.NoSuchBeanDefinitionException;
+import org.litespring.beans.factory.BeanCreationException;
+import org.litespring.beans.factory.BeanFactoryAware;
+import org.litespring.beans.factory.NoSuchBeanDefinitionException;
 import org.litespring.beans.factory.config.BeanPostProcessor;
-import org.litespring.beans.factory.config.ConfigurableBeanFactory;
 import org.litespring.beans.factory.config.DependencyDescriptor;
 import org.litespring.beans.factory.config.InstantiationAwareBeanPostProcessor;
 import org.litespring.util.ClassUtils;
 
-public class DefaultBeanFactory extends DefaultSingletonBeanRegistry 
-	implements ConfigurableBeanFactory,BeanDefinitionRegistry{
-
+public class DefaultBeanFactory  extends AbstractBeanFactory
+	implements BeanDefinitionRegistry{
+	private static final Log logger = LogFactory.getLog(DefaultBeanFactory.class);
 	private List<BeanPostProcessor> beanPostProcessors = new ArrayList<BeanPostProcessor>();
 	
 	private final Map<String, BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<String, BeanDefinition>(64);
@@ -43,6 +46,32 @@ public class DefaultBeanFactory extends DefaultSingletonBeanRegistry
 			
 		return this.beanDefinitionMap.get(beanID);
 	}
+	public List<Object> getBeansByType(Class<?> type){
+		List<Object> result = new ArrayList<Object>();
+		List<String> beanIDs = this.getBeanIDsByType(type);
+		for(String beanID : beanIDs){
+			result.add(this.getBean(beanID));
+		}
+		return result;		
+	}
+	
+	private List<String> getBeanIDsByType(Class<?> type){
+		List<String> result = new ArrayList<String>();
+		for(String beanName :this.beanDefinitionMap.keySet()){
+			Class<?> beanClass = null;
+			try{
+				beanClass = this.getType(beanName);
+			}catch(Exception e){
+				logger.warn("can't load class for bean :"+beanName+", skip it.");
+				continue;
+			}
+			
+			if((beanClass != null) && type.isAssignableFrom(beanClass)){
+				result.add(beanName);
+			}
+		}		
+		return result;
+	}
 
 	public Object getBean(String beanID) {
 		BeanDefinition bd = this.getBeanDefinition(beanID);
@@ -60,11 +89,13 @@ public class DefaultBeanFactory extends DefaultSingletonBeanRegistry
 		} 
 		return createBean(bd);
 	}
-	private Object createBean(BeanDefinition bd) {
-		//鍒涘缓瀹炰緥
+	protected Object createBean(BeanDefinition bd) {
+		//创建实例
 		Object bean = instantiateBean(bd);
-		//璁剧疆灞炴��
+		//设置属性
 		populateBean(bd, bean);
+		
+		bean = initializeBean(bd,bean);
 		
 		return bean;		
 		
@@ -122,6 +153,31 @@ public class DefaultBeanFactory extends DefaultSingletonBeanRegistry
 			throw new BeanCreationException("Failed to obtain BeanInfo for class [" + bd.getBeanClassName() + "]", ex);
 		}	
 	}
+	protected Object initializeBean(BeanDefinition bd, Object bean)  {
+		invokeAwareMethods(bean);	
+        //Todo，调用Bean的init方法，暂不实现
+		if(!bd.isSynthetic()){
+			return applyBeanPostProcessorsAfterInitialization(bean,bd.getID());
+		}
+		return bean;
+	}
+	public Object applyBeanPostProcessorsAfterInitialization(Object existingBean, String beanName)
+			throws BeansException {
+
+		Object result = existingBean;
+		for (BeanPostProcessor beanProcessor : getBeanPostProcessors()) {
+			result = beanProcessor.afterInitialization(result, beanName);
+			if (result == null) {
+				return result;
+			}
+		}
+		return result;
+	}
+	private void invokeAwareMethods(final Object bean) {
+		if (bean instanceof BeanFactoryAware) {
+			((BeanFactoryAware) bean).setBeanFactory(this);
+		}
+	}
 
 	public void setBeanClassLoader(ClassLoader beanClassLoader) {
 		this.beanClassLoader = beanClassLoader;
@@ -134,7 +190,7 @@ public class DefaultBeanFactory extends DefaultSingletonBeanRegistry
 		
 		Class<?> typeToMatch = descriptor.getDependencyType();
 		for(BeanDefinition bd: this.beanDefinitionMap.values()){		
-			//纭繚BeanDefinition 鏈塁lass瀵硅薄
+			//确保BeanDefinition 有Class对象
 			resolveBeanClass(bd);
 			Class<?> beanClass = bd.getBeanClass();			
 			if(typeToMatch.isAssignableFrom(beanClass)){

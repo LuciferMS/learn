@@ -6,7 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.litespring.beans.SimpleTypeConverter;
 import org.litespring.beans.TypeConverter;
-import org.litespring.beans.exception.TypeMismatchException;
+import org.litespring.beans.TypeMismatchException;
 
 public class TypeConverterTest {
 

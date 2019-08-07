@@ -11,21 +11,21 @@ import org.litespring.core.io.ClassPathResource;
 import org.litespring.dao.v2.AccountDao;
 
 public class BeanDefinitionValueResolverTest {
-	
-	
+
 	@Test
 	public void testResolveRuntimeBeanReference() {
-		DefaultBeanFactory factory=new DefaultBeanFactory();
-		XmlBeanDefinitionReader reader=new XmlBeanDefinitionReader(factory);
+		DefaultBeanFactory factory = new DefaultBeanFactory();
+		XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);		
 		reader.loadBeanDefinitions(new ClassPathResource("petstore-v2.xml"));
+		
 		BeanDefinitionValueResolver resolver = new BeanDefinitionValueResolver(factory);
+		
 		RuntimeBeanReference reference = new RuntimeBeanReference("accountDao");
 		Object value = resolver.resolveValueIfNecessary(reference);
 		
 		Assert.assertNotNull(value);		
-		Assert.assertTrue(value instanceof AccountDao);	
+		Assert.assertTrue(value instanceof AccountDao);				
 	}
-	
 	@Test
 	public void testResolveTypedStringValue() {
 		DefaultBeanFactory factory = new DefaultBeanFactory();

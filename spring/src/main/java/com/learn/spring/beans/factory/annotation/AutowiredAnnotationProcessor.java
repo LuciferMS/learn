@@ -9,8 +9,8 @@ import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.Set;
 
-import org.litespring.beans.exception.BeanCreationException;
-import org.litespring.beans.exception.BeansException;
+import org.litespring.beans.BeansException;
+import org.litespring.beans.factory.BeanCreationException;
 import org.litespring.beans.factory.config.AutowireCapableBeanFactory;
 import org.litespring.beans.factory.config.InstantiationAwareBeanPostProcessor;
 import org.litespring.core.annotation.AnnotationUtils;
