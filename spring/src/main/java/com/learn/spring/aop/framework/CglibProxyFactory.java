@@ -1,4 +1,4 @@
-package org.litespring.aop.framework;
+package com.learn.spring.aop.framework;
 
 /*
  * Copyright 2002-2015 the original author or authors.
@@ -23,11 +23,10 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.learn.spring.aop.Advice;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.litespring.aop.Advice;
-import org.litespring.aop.AopInvocationException;
-import org.litespring.util.Assert;
+import com.learn.spring.util.Assert;
 import org.springframework.cglib.core.CodeGenerationException;
 import org.springframework.cglib.core.SpringNamingPolicy;
 import org.springframework.cglib.proxy.Callback;

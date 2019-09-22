@@ -1,9 +1,13 @@
-package org.litespring.beans;
+package com.learn.spring.beans;
 
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * 构造器配置内容
+ * @author Elliot
+ */
 public class ConstructorArgument {
 
 	

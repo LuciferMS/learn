@@ -1,8 +1,12 @@
-package org.litespring.context.support;
+package com.learn.spring.context.support;
 
-import org.litespring.core.io.ClassPathResource;
-import org.litespring.core.io.Resource;
+import com.learn.spring.core.io.ClassPathResource;
+import com.learn.spring.core.io.Resource;
 
+/**
+ * 从classPath获取bean
+ * @author Elliot
+ */
 public class ClassPathXmlApplicationContext extends AbstractApplicationContext {
 
 	public ClassPathXmlApplicationContext(String configFile) {

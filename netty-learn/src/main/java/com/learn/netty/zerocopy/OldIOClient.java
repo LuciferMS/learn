@@ -1,10 +1,13 @@
-package com.shensiyuan.zerocopy;
+package com.learn.netty.zerocopy;
 
 import java.io.DataOutputStream;
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.net.Socket;
 
+/**
+ * @author Elliot
+ */
 public class OldIOClient {
 
     public static void main(String[] args) throws Exception {

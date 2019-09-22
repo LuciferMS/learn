@@ -1,9 +1,22 @@
-package org.litespring.beans.factory.support;
+package com.learn.spring.beans.factory.support;
 
-import org.litespring.beans.BeanDefinition;
-import org.litespring.beans.factory.BeanCreationException;
-import org.litespring.beans.factory.config.ConfigurableBeanFactory;
+import com.learn.spring.beans.BeanDefinition;
+import com.learn.spring.beans.factory.BeanCreationException;
+import com.learn.spring.beans.factory.config.ConfigurableBeanFactory;
 
-public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry implements ConfigurableBeanFactory {
+/**
+ * beanFactory抽象类
+ * @author Elliot
+ */
+public abstract class AbstractBeanFactory extends DefaultSingletonBeanRegistry
+        implements ConfigurableBeanFactory {
+
+    /**
+     *  顾名思义
+     * @param bd
+     * @return
+     * @throws BeanCreationException
+     */
 	protected abstract Object createBean(BeanDefinition bd) throws BeanCreationException;
+
 }

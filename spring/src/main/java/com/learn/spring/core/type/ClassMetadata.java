@@ -1,4 +1,4 @@
-package org.litespring.core.type;
+package com.learn.spring.core.type;
 
 
 public interface ClassMetadata {

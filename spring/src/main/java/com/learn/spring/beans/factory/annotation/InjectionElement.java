@@ -1,8 +1,8 @@
-package org.litespring.beans.factory.annotation;
+package com.learn.spring.beans.factory.annotation;
 
 import java.lang.reflect.Member;
 
-import org.litespring.beans.factory.config.AutowireCapableBeanFactory;
+import com.learn.spring.beans.factory.config.AutowireCapableBeanFactory;
 
 public abstract class InjectionElement {
 	protected Member member;

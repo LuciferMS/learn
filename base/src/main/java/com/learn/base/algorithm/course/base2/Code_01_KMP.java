@@ -1,4 +1,4 @@
-package algorithm.course.base2;
+package com.learn.base.algorithm.course.base2;
 
 public class Code_01_KMP {
 

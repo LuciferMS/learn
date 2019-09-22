@@ -1,4 +1,4 @@
-package com.shengsiyuan.netty.bytebuf;
+package com.learn.netty.bytebuf;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.CompositeByteBuf;

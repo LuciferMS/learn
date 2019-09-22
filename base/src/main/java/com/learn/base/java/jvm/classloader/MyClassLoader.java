@@ -1,4 +1,4 @@
-package com.learn.base.jvm.classloader;
+package com.learn.base.java.jvm.classloader;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;

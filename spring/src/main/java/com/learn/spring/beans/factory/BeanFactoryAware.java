@@ -1,9 +1,12 @@
-package org.litespring.beans.factory;
+package com.learn.spring.beans.factory;
 
 
 
-import org.litespring.beans.BeansException;
+import com.learn.spring.beans.BeansException;
 
+/**
+ * @author Elliot
+ */
 public interface BeanFactoryAware {
 
 	/**

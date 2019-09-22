@@ -1,10 +1,14 @@
-package org.litespring.beans.factory;
+package com.learn.spring.beans.factory;
 
-import org.litespring.beans.BeansException;
-import org.litespring.util.StringUtils;
+import com.learn.spring.beans.BeansException;
+import com.learn.spring.util.StringUtils;
 
 
 
+/**
+ *
+ * @author Elliot
+ */
 public class NoSuchBeanDefinitionException extends BeansException {
 
 	/** Name of the missing bean */

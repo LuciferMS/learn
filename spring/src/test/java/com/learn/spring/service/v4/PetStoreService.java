@@ -1,17 +1,16 @@
-package org.litespring.service.v4;
+package com.learn.spring.service.v4;
 
-import org.litespring.beans.factory.annotation.Autowired;
-import org.litespring.dao.v4.AccountDao;
-import org.litespring.dao.v4.ItemDao;
-import org.litespring.stereotype.Component;
+import com.learn.spring.beans.factory.annotation.Autowired;
+import com.learn.spring.dao.v4.AccountDao;
+import com.learn.spring.dao.v4.ItemDao;
+import com.learn.spring.stereotype.Component;
 
 @Component(value="petStore")
-
 public class PetStoreService {
 	@Autowired
 	private AccountDao accountDao;
 	@Autowired
-	private ItemDao  itemDao;
+	private ItemDao itemDao;
 	
 	public AccountDao getAccountDao() {
 		return accountDao;

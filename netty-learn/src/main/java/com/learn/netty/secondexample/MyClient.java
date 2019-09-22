@@ -1,4 +1,4 @@
-package com.shengsiyuan.netty.secondexample;
+package com.learn.netty.secondexample;
 
 
 import io.netty.bootstrap.Bootstrap;

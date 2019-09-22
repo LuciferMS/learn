@@ -1,9 +1,12 @@
-package com.shensiyuan.zerocopy;
+package com.learn.netty.zerocopy;
 
 import java.io.DataInputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ * @author Elliot
+ */
 public class OldIOServer {
 
     public static void main(String[] args) throws Exception {

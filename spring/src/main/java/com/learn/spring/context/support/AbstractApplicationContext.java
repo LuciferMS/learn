@@ -1,17 +1,21 @@
-package org.litespring.context.support;
+package com.learn.spring.context.support;
 
 import java.util.List;
 
-import org.litespring.aop.aspectj.AspectJAutoProxyCreator;
-import org.litespring.beans.factory.NoSuchBeanDefinitionException;
-import org.litespring.beans.factory.annotation.AutowiredAnnotationProcessor;
-import org.litespring.beans.factory.config.ConfigurableBeanFactory;
-import org.litespring.beans.factory.support.DefaultBeanFactory;
-import org.litespring.beans.factory.xml.XmlBeanDefinitionReader;
-import org.litespring.context.ApplicationContext;
-import org.litespring.core.io.Resource;
-import org.litespring.util.ClassUtils;
+import com.learn.spring.core.io.Resource;
+import com.learn.spring.aop.aspectj.AspectJAutoProxyCreator;
+import com.learn.spring.beans.factory.NoSuchBeanDefinitionException;
+import com.learn.spring.beans.factory.annotation.AutowiredAnnotationProcessor;
+import com.learn.spring.beans.factory.config.ConfigurableBeanFactory;
+import com.learn.spring.beans.factory.support.DefaultBeanFactory;
+import com.learn.spring.beans.factory.xml.XmlBeanDefinitionReader;
+import com.learn.spring.context.ApplicationContext;
+import com.learn.spring.util.ClassUtils;
 
+/**
+ * ApplicationContext的默认实现
+ * @author Elliot
+ */
 public abstract class AbstractApplicationContext implements ApplicationContext {
 
 	private DefaultBeanFactory factory = null;
@@ -26,8 +30,8 @@ public abstract class AbstractApplicationContext implements ApplicationContext {
 		registerBeanPostProcessors(factory);
 	}
 	
-	public Object getBean(String beanID) {
-		
+	@Override
+    public Object getBean(String beanID) {
 		return factory.getBean(beanID);
 	}
 	
@@ -53,9 +57,11 @@ public abstract class AbstractApplicationContext implements ApplicationContext {
     	}
 		
 	}
+    @Override
     public Class<?> getType(String name) throws NoSuchBeanDefinitionException{
     	return this.factory.getType(name);
     }
+    @Override
     public List<Object> getBeansByType(Class<?> type){
     	return this.factory.getBeansByType(type);
     }

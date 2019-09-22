@@ -1,4 +1,4 @@
-package base;
+package com.learn.base.java.others;
 
 /**
  * @program: learn
@@ -32,6 +32,7 @@ public class MethodTest {
     public static void main(String[] args) {
         Human h = new Man();
         MethodTest m = new MethodTest();
+        h.say();
         m.testSay(h);
     }
 }

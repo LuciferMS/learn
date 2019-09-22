@@ -1,4 +1,4 @@
-package org.litespring.aop.aspectj;
+package com.learn.spring.aop.aspectj;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -6,17 +6,17 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
-import org.litespring.aop.Advice;
-import org.litespring.aop.MethodMatcher;
-import org.litespring.aop.Pointcut;
-import org.litespring.aop.framework.AopConfigSupport;
-import org.litespring.aop.framework.AopProxyFactory;
-import org.litespring.aop.framework.CglibProxyFactory;
-import org.litespring.aop.framework.JdkAopProxyFactory;
-import org.litespring.beans.BeansException;
-import org.litespring.beans.factory.config.BeanPostProcessor;
-import org.litespring.beans.factory.config.ConfigurableBeanFactory;
-import org.litespring.util.ClassUtils;
+import com.learn.spring.aop.Advice;
+import com.learn.spring.aop.MethodMatcher;
+import com.learn.spring.aop.Pointcut;
+import com.learn.spring.aop.framework.JdkAopProxyFactory;
+import com.learn.spring.beans.BeansException;
+import com.learn.spring.aop.framework.AopConfigSupport;
+import com.learn.spring.aop.framework.AopProxyFactory;
+import com.learn.spring.aop.framework.CglibProxyFactory;
+import com.learn.spring.beans.factory.config.BeanPostProcessor;
+import com.learn.spring.beans.factory.config.ConfigurableBeanFactory;
+import com.learn.spring.util.ClassUtils;
 
 public class AspectJAutoProxyCreator implements BeanPostProcessor {
 	ConfigurableBeanFactory beanFactory;
@@ -97,7 +97,7 @@ public class AspectJAutoProxyCreator implements BeanPostProcessor {
 	public static boolean canApply(Pointcut pc, Class<?> targetClass) {
 		
 
-		MethodMatcher methodMatcher = pc.getMethodMatcher();	
+		MethodMatcher methodMatcher = pc.getMethodMatcher();
 
 		Set<Class> classes = new LinkedHashSet<Class>(ClassUtils.getAllInterfacesForClassAsSet(targetClass));
 		classes.add(targetClass);

@@ -1,4 +1,4 @@
-package algorithm.course.advanced6;
+package com.learn.base.algorithm.course.advanced6;
 
 public class Code_01_CoinsWay {
 

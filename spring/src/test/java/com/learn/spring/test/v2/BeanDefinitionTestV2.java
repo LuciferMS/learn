@@ -1,15 +1,15 @@
-package org.litespring.test.v2;
+package com.learn.spring.test.v2;
 
 import java.util.List;
 
+import com.learn.spring.beans.BeanDefinition;
+import com.learn.spring.beans.PropertyValue;
+import com.learn.spring.beans.factory.config.RuntimeBeanReference;
+import com.learn.spring.beans.factory.support.DefaultBeanFactory;
+import com.learn.spring.beans.factory.xml.XmlBeanDefinitionReader;
+import com.learn.spring.core.io.ClassPathResource;
 import org.junit.Assert;
 import org.junit.Test;
-import org.litespring.beans.BeanDefinition;
-import org.litespring.beans.PropertyValue;
-import org.litespring.beans.factory.config.RuntimeBeanReference;
-import org.litespring.beans.factory.support.DefaultBeanFactory;
-import org.litespring.beans.factory.xml.XmlBeanDefinitionReader;
-import org.litespring.core.io.ClassPathResource;
 
 public class BeanDefinitionTestV2 {
 

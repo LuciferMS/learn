@@ -1,4 +1,4 @@
-package org.litespring.aop.aspectj;
+package com.learn.spring.aop.aspectj;
 
 
 
@@ -6,18 +6,18 @@ import java.lang.reflect.Method;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.learn.spring.aop.MethodMatcher;
+import com.learn.spring.aop.Pointcut;
 import org.aspectj.weaver.reflect.ReflectionWorld.ReflectionWorldException;
 import org.aspectj.weaver.tools.PointcutExpression;
 import org.aspectj.weaver.tools.PointcutParameter;
 import org.aspectj.weaver.tools.PointcutParser;
 import org.aspectj.weaver.tools.PointcutPrimitive;
 import org.aspectj.weaver.tools.ShadowMatch;
-import org.litespring.aop.MethodMatcher;
-import org.litespring.aop.Pointcut;
-import org.litespring.util.ClassUtils;
-import org.litespring.util.StringUtils;
+import com.learn.spring.util.ClassUtils;
+import com.learn.spring.util.StringUtils;
 
-public class AspectJExpressionPointcut implements Pointcut,MethodMatcher {
+public class AspectJExpressionPointcut implements Pointcut, MethodMatcher {
 
 	private static final Set<PointcutPrimitive> SUPPORTED_PRIMITIVES = new HashSet<PointcutPrimitive>();
 

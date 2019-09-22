@@ -1,3 +1,7 @@
+package com.mybatis.xml;
+
+import java.util.HashMap;
+
 /**
  * @program: learn
  * @description: xml解析器
@@ -5,4 +9,5 @@
  * @create: 2019-08-01 03:16
  **/
 public class XmlMapperDefinitionReader {
+
 }

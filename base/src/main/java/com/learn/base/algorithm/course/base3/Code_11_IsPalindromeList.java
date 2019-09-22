@@ -1,4 +1,4 @@
-package algorithm.course.base3;
+package com.learn.base.algorithm.course.base3;
 
 import java.util.Stack;
 

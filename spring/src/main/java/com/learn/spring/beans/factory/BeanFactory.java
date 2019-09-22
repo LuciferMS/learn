@@ -1,7 +1,11 @@
-package org.litespring.beans.factory;
+package com.learn.spring.beans.factory;
 
 import java.util.List;
 
+/**
+ * beanFactory
+ * @author Elliot
+ */
 public interface BeanFactory {
 
 	Object getBean(String beanID);

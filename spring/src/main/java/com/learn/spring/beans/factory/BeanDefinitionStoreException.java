@@ -1,7 +1,11 @@
-package org.litespring.beans.factory;
+package com.learn.spring.beans.factory;
 
-import org.litespring.beans.BeansException;
+import com.learn.spring.beans.BeansException;
 
+/**
+ * bean定义出错
+ * @author Elliot
+ */
 public class BeanDefinitionStoreException extends BeansException {
 
 	public BeanDefinitionStoreException(String msg, Throwable cause) {

@@ -12,7 +12,7 @@
 		base-package="org.litespring.service.v6">
 	</context:component-scan>
 
-	<bean id="tx" class="org.litespring.tx.TransactionManager" />
+	<bean id="tx" class="com.learn.spring.tx.TransactionManager" />
 	
 	<aop:config>
 		

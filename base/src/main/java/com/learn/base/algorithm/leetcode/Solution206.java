@@ -1,4 +1,4 @@
-package algorithm.leetcode;
+package com.learn.base.algorithm.leetcode;
 
 /**
  * @program: learn
@@ -32,7 +32,6 @@ public class Solution206 {
     static class ListNode {
         int val;
         ListNode next;
-
         ListNode(int x) {
             val = x;
         }

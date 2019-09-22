@@ -1,4 +1,4 @@
-package org.litespring.stereotype;
+package com.learn.spring.stereotype;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

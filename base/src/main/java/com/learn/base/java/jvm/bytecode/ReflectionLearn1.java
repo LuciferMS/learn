@@ -1,4 +1,4 @@
-package com.learn.base.jvm.bytecode;
+package com.learn.base.java.jvm.bytecode;
 
 import java.lang.reflect.Method;
 
@@ -17,7 +17,7 @@ public class ReflectionLearn1 {
     }
 
     public static void main(String[] args) throws Exception {
-        Class<?> clz = Class.forName("com.learn.base.jvm.bytecode.ReflectionLearn1");
+        Class<?> clz = Class.forName("com.learn.base.java.jvm.bytecode.ReflectionLearn1");
         Method method = clz.getMethod("foo");
         for (int i = 0; i < 20; i++) {
             method.invoke(null);

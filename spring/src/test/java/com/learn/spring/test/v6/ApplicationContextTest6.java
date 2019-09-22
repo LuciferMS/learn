@@ -1,14 +1,14 @@
-package org.litespring.test.v6;
+package com.learn.spring.test.v6;
 
 import java.util.List;
 
+import com.learn.spring.context.ApplicationContext;
+import com.learn.spring.context.support.ClassPathXmlApplicationContext;
+import com.learn.spring.service.v6.IPetStoreService;
+import com.learn.spring.util.MessageTracker;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import org.litespring.context.ApplicationContext;
-import org.litespring.context.support.ClassPathXmlApplicationContext;
-import org.litespring.service.v6.IPetStoreService;
-import org.litespring.util.MessageTracker;
 
 public class ApplicationContextTest6 {
 	

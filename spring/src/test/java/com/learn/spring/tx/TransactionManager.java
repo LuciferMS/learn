@@ -1,6 +1,6 @@
-package org.litespring.tx;
+package com.learn.spring.tx;
 
-import org.litespring.util.MessageTracker;
+import com.learn.spring.util.MessageTracker;
 
 public class TransactionManager {
 	

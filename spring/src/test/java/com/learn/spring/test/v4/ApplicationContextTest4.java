@@ -1,10 +1,10 @@
-package org.litespring.test.v4;
+package com.learn.spring.test.v4;
 
+import com.learn.spring.context.ApplicationContext;
+import com.learn.spring.context.support.ClassPathXmlApplicationContext;
+import com.learn.spring.service.v4.PetStoreService;
 import org.junit.Assert;
 import org.junit.Test;
-import org.litespring.context.ApplicationContext;
-import org.litespring.context.support.ClassPathXmlApplicationContext;
-import org.litespring.service.v4.PetStoreService;
 
 public class ApplicationContextTest4 {
 

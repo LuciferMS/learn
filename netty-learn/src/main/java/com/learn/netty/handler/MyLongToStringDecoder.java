@@ -1,4 +1,4 @@
-package com.shengsiyuan.netty.handler;
+package com.learn.netty.handler;
 
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageDecoder;

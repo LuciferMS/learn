@@ -1,4 +1,4 @@
-package algorithm.course.base5;
+package com.learn.base.algorithm.course.base5;
 
 public class Code_03_Islands {
 

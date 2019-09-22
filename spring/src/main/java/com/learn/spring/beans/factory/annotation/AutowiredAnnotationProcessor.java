@@ -1,4 +1,4 @@
-package org.litespring.beans.factory.annotation;
+package com.learn.spring.beans.factory.annotation;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.AccessibleObject;
@@ -9,12 +9,12 @@ import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.Set;
 
-import org.litespring.beans.BeansException;
-import org.litespring.beans.factory.BeanCreationException;
-import org.litespring.beans.factory.config.AutowireCapableBeanFactory;
-import org.litespring.beans.factory.config.InstantiationAwareBeanPostProcessor;
-import org.litespring.core.annotation.AnnotationUtils;
-import org.litespring.util.ReflectionUtils;
+import com.learn.spring.beans.BeansException;
+import com.learn.spring.beans.factory.BeanCreationException;
+import com.learn.spring.beans.factory.config.AutowireCapableBeanFactory;
+import com.learn.spring.beans.factory.config.InstantiationAwareBeanPostProcessor;
+import com.learn.spring.core.annotation.AnnotationUtils;
+import com.learn.spring.util.ReflectionUtils;
 
 
 public class AutowiredAnnotationProcessor implements InstantiationAwareBeanPostProcessor  {

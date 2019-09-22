@@ -1,4 +1,4 @@
-package com.learn.base.concurrent.lock;
+package com.learn.base.java.concurrent.lock;
 
 import java.util.concurrent.locks.ReentrantLock;
 

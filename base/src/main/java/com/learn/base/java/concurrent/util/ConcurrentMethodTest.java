@@ -1,4 +1,4 @@
-package com.learn.base.concurrent.util;
+package com.learn.base.java.concurrent.util;
 
 /**
  * @program: learn

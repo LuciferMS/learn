@@ -1,4 +1,4 @@
-package org.litespring.core.annotation;
+package com.learn.spring.core.annotation;
 
 
 import static java.lang.String.format;
@@ -6,7 +6,7 @@ import static java.lang.String.format;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import org.litespring.util.Assert;
+import com.learn.spring.util.Assert;
 
 
 @SuppressWarnings("serial")

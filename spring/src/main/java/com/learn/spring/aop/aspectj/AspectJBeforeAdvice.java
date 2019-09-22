@@ -1,9 +1,9 @@
-package org.litespring.aop.aspectj;
+package com.learn.spring.aop.aspectj;
 
 import java.lang.reflect.Method;
 
 import org.aopalliance.intercept.MethodInvocation;
-import org.litespring.aop.config.AspectInstanceFactory;
+import com.learn.spring.aop.config.AspectInstanceFactory;
 
 
 

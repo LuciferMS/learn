@@ -1,4 +1,4 @@
-package com.learn.base.jvm.bytecode;
+package com.learn.base.java.jvm.bytecode;
 
 import java.io.Serializable;
 /**

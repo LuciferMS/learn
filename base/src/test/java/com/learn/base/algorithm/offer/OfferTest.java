@@ -1,4 +1,4 @@
-package algorithm.offer;
+package com.learn.base.algorithm.offer;
 
 import org.junit.Test;
 

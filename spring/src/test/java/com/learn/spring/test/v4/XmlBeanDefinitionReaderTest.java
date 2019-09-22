@@ -1,16 +1,16 @@
-package org.litespring.test.v4;
+package com.learn.spring.test.v4;
 
+import com.learn.spring.beans.BeanDefinition;
+import com.learn.spring.beans.factory.support.DefaultBeanFactory;
+import com.learn.spring.beans.factory.xml.XmlBeanDefinitionReader;
+import com.learn.spring.context.annotation.ScannedGenericBeanDefinition;
+import com.learn.spring.core.annotation.AnnotationAttributes;
+import com.learn.spring.core.io.ClassPathResource;
+import com.learn.spring.core.io.Resource;
+import com.learn.spring.core.type.AnnotationMetadata;
+import com.learn.spring.stereotype.Component;
 import org.junit.Assert;
 import org.junit.Test;
-import org.litespring.beans.BeanDefinition;
-import org.litespring.beans.factory.support.DefaultBeanFactory;
-import org.litespring.beans.factory.xml.XmlBeanDefinitionReader;
-import org.litespring.context.annotation.ScannedGenericBeanDefinition;
-import org.litespring.core.annotation.AnnotationAttributes;
-import org.litespring.core.io.ClassPathResource;
-import org.litespring.core.io.Resource;
-import org.litespring.core.type.AnnotationMetadata;
-import org.litespring.stereotype.Component;
 
 public class XmlBeanDefinitionReaderTest {
 
@@ -32,7 +32,7 @@ public class XmlBeanDefinitionReaderTest {
 			
 			
 			Assert.assertTrue(amd.hasAnnotation(annotation));		
-			AnnotationAttributes attributes = amd.getAnnotationAttributes(annotation);		
+			AnnotationAttributes attributes = amd.getAnnotationAttributes(annotation);
 			Assert.assertEquals("petStore", attributes.get("value"));
 		}
 		{

@@ -1,8 +1,8 @@
-package org.litespring.context.annotation;
+package com.learn.spring.context.annotation;
 
-import org.litespring.beans.factory.annotation.AnnotatedBeanDefinition;
-import org.litespring.beans.factory.support.GenericBeanDefinition;
-import org.litespring.core.type.AnnotationMetadata;
+import com.learn.spring.beans.factory.annotation.AnnotatedBeanDefinition;
+import com.learn.spring.beans.factory.support.GenericBeanDefinition;
+import com.learn.spring.core.type.AnnotationMetadata;
 
 public class ScannedGenericBeanDefinition extends GenericBeanDefinition implements AnnotatedBeanDefinition {
 

@@ -1,4 +1,4 @@
-package algorithm.course.advanced7;
+package com.learn.base.algorithm.course.advanced7;
 
 public class Code_08_ParenthesesProblem {
 

@@ -1,14 +1,15 @@
-package org.litespring.test.v3;
+package com.learn.spring.test.v3;
 
+import com.learn.spring.beans.BeanDefinition;
+import com.learn.spring.beans.factory.support.ConstructorResolver;
+import com.learn.spring.beans.factory.support.DefaultBeanFactory;
+import com.learn.spring.beans.factory.xml.XmlBeanDefinitionReader;
+import com.learn.spring.core.io.ClassPathResource;
+import com.learn.spring.core.io.Resource;
 import org.junit.Assert;
 import org.junit.Test;
-import org.litespring.beans.BeanDefinition;
-import org.litespring.beans.factory.support.ConstructorResolver;
-import org.litespring.beans.factory.support.DefaultBeanFactory;
-import org.litespring.beans.factory.xml.XmlBeanDefinitionReader;
-import org.litespring.core.io.ClassPathResource;
-import org.litespring.core.io.Resource;
-import org.litespring.service.v3.PetStoreService;
+
+import com.learn.spring.service.v3.PetStoreService;
 
 public class ConstructorResolverTest {
 

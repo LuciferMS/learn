@@ -1,4 +1,4 @@
-package com.learn.base.concurrent.thread;
+package com.learn.base.java.concurrent.thread;
 
 /**
  * @program: learn
@@ -79,18 +79,18 @@ public class ThreadPrint {
         }
 
         @Override
-        public void run() {
-            while (true) {
-                synchronized (print) {
-                    if (print.isMutexA()) {
-                        int i = print.getI();
-                        System.out.println("thread A:" + i);
-                        print.setI(i + 1);
-                        print.setMutexA(false);
-                        print.setMutexB(true);
+            public void run() {
+                while (true) {
+                    synchronized (print) {
+                        if (print.isMutexA()) {
+                            int i = print.getI();
+                            System.out.println("thread A:" + i);
+                            print.setI(i + 1);
+                            print.setMutexA(false);
+                            print.setMutexB(true);
+                        }
                     }
                 }
-            }
         }
     }
 

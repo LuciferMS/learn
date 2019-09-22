@@ -1,13 +1,13 @@
-package org.litespring.test.v2;
+package com.learn.spring.test.v2;
 
 import static org.junit.Assert.*;
 
+import com.learn.spring.context.ApplicationContext;
+import com.learn.spring.context.support.ClassPathXmlApplicationContext;
 import org.junit.Test;
-import org.litespring.context.ApplicationContext;
-import org.litespring.context.support.ClassPathXmlApplicationContext;
-import org.litespring.dao.v2.AccountDao;
-import org.litespring.dao.v2.ItemDao;
-import org.litespring.service.v2.PetStoreService;
+import com.learn.spring.dao.v2.AccountDao;
+import com.learn.spring.dao.v2.ItemDao;
+import com.learn.spring.service.v2.PetStoreService;
 
 public class ApplicationContextTestV2 {
 

@@ -1,4 +1,4 @@
-package algorithm.course.advanced3;
+package com.learn.base.algorithm.course.advanced3;
 
 import java.util.ArrayList;
 import java.util.Iterator;

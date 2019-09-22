@@ -1,21 +1,21 @@
-package org.litespring.context.annotation;
+package com.learn.spring.context.annotation;
 
 import java.io.IOException;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+import com.learn.spring.beans.BeanDefinition;
+import com.learn.spring.beans.factory.BeanDefinitionStoreException;
+import com.learn.spring.beans.factory.support.BeanDefinitionRegistry;
+import com.learn.spring.beans.factory.support.BeanNameGenerator;
+import com.learn.spring.core.io.Resource;
+import com.learn.spring.core.io.support.PackageResourceLoader;
+import com.learn.spring.core.type.classreading.MetadataReader;
+import com.learn.spring.core.type.classreading.SimpleMetadataReader;
+import com.learn.spring.stereotype.Component;
+import com.learn.spring.util.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.litespring.beans.BeanDefinition;
-import org.litespring.beans.factory.BeanDefinitionStoreException;
-import org.litespring.beans.factory.support.BeanDefinitionRegistry;
-import org.litespring.beans.factory.support.BeanNameGenerator;
-import org.litespring.core.io.Resource;
-import org.litespring.core.io.support.PackageResourceLoader;
-import org.litespring.core.type.classreading.MetadataReader;
-import org.litespring.core.type.classreading.SimpleMetadataReader;
-import org.litespring.stereotype.Component;
-import org.litespring.util.StringUtils;
 
 public class ClassPathBeanDefinitionScanner {
 	

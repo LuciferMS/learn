@@ -1,4 +1,4 @@
-package algorithm.course.advanced2;
+package com.learn.base.algorithm.course.advanced2;
 
 public class Code_07_ThrowChessPiecesProblem {
 

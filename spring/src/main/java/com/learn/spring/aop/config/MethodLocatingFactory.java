@@ -1,14 +1,14 @@
-package org.litespring.aop.config;
+package com.learn.spring.aop.config;
 
 import java.lang.reflect.Method;
 
-import org.litespring.beans.BeanUtils;
-import org.litespring.beans.factory.BeanFactory;
-import org.litespring.beans.factory.BeanFactoryAware;
-import org.litespring.beans.factory.FactoryBean;
-import org.litespring.util.StringUtils;
+import com.learn.spring.beans.BeanUtils;
+import com.learn.spring.beans.factory.BeanFactory;
+import com.learn.spring.beans.factory.BeanFactoryAware;
+import com.learn.spring.beans.factory.FactoryBean;
+import com.learn.spring.util.StringUtils;
 
-public class MethodLocatingFactory  implements FactoryBean<Method>,BeanFactoryAware{
+public class MethodLocatingFactory  implements FactoryBean<Method>, BeanFactoryAware {
 	
 	private String targetBeanName;
 

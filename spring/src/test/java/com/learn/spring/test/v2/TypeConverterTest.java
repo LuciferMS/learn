@@ -1,12 +1,12 @@
-package org.litespring.test.v2;
+package com.learn.spring.test.v2;
 
 import static org.junit.Assert.fail;
 
+import com.learn.spring.beans.SimpleTypeConverter;
+import com.learn.spring.beans.TypeConverter;
+import com.learn.spring.beans.TypeMismatchException;
 import org.junit.Assert;
 import org.junit.Test;
-import org.litespring.beans.SimpleTypeConverter;
-import org.litespring.beans.TypeConverter;
-import org.litespring.beans.TypeMismatchException;
 
 public class TypeConverterTest {
 

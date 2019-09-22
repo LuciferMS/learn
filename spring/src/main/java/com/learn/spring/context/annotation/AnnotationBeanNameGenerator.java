@@ -1,24 +1,25 @@
-package org.litespring.context.annotation;
+package com.learn.spring.context.annotation;
 
 
 import java.beans.Introspector;
 import java.util.Map;
 import java.util.Set;
 
-import org.litespring.beans.BeanDefinition;
-import org.litespring.beans.factory.annotation.AnnotatedBeanDefinition;
-import org.litespring.beans.factory.support.BeanDefinitionRegistry;
-import org.litespring.beans.factory.support.BeanNameGenerator;
-import org.litespring.core.annotation.AnnotationAttributes;
-import org.litespring.core.type.AnnotationMetadata;
-import org.litespring.stereotype.Component;
-import org.litespring.util.ClassUtils;
-import org.litespring.util.StringUtils;
+import com.learn.spring.beans.BeanDefinition;
+import com.learn.spring.beans.factory.annotation.AnnotatedBeanDefinition;
+import com.learn.spring.beans.factory.support.BeanDefinitionRegistry;
+import com.learn.spring.beans.factory.support.BeanNameGenerator;
+import com.learn.spring.core.type.AnnotationMetadata;
+import com.learn.spring.stereotype.Component;
+import com.learn.spring.util.ClassUtils;
+import com.learn.spring.util.StringUtils;
+import com.learn.spring.core.annotation.AnnotationAttributes;
 
 public class AnnotationBeanNameGenerator implements BeanNameGenerator {
 
 
-	public String generateBeanName(BeanDefinition definition, BeanDefinitionRegistry registry) {
+	@Override
+    public String generateBeanName(BeanDefinition definition, BeanDefinitionRegistry registry) {
 		if (definition instanceof AnnotatedBeanDefinition) {
 			String beanName = determineBeanNameFromAnnotation((AnnotatedBeanDefinition) definition);
 			if (StringUtils.hasText(beanName)) {

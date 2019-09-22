@@ -1,9 +1,9 @@
-package org.litespring.beans.factory.support;
+package com.learn.spring.beans.factory.support;
 
 
-import org.litespring.beans.BeanDefinition;
-import org.litespring.beans.factory.BeanDefinitionStoreException;
-import org.litespring.util.StringUtils;
+import com.learn.spring.beans.BeanDefinition;
+import com.learn.spring.beans.factory.BeanDefinitionStoreException;
+import com.learn.spring.util.StringUtils;
 
 
 /**
@@ -40,7 +40,7 @@ public class BeanDefinitionReaderUtils {
 	 * for the given bean definition
 	 */
 	public static String generateBeanName(
-			BeanDefinition definition, BeanDefinitionRegistry registry, boolean isInnerBean)
+            BeanDefinition definition, BeanDefinitionRegistry registry, boolean isInnerBean)
 			throws BeanDefinitionStoreException {
 
 		String generatedBeanName = definition.getBeanClassName();

@@ -1,4 +1,4 @@
-package com.learn.base.concurrent.executor;
+package com.learn.base.java.concurrent.executor;
 
 import java.util.concurrent.Executor;
 

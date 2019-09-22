@@ -1,4 +1,4 @@
-package algorithm.course.advanced4;
+package com.learn.base.algorithm.course.advanced4;
 
 import java.util.ArrayList;
 import java.util.Arrays;

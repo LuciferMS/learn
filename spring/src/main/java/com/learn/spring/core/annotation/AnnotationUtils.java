@@ -1,4 +1,4 @@
-package org.litespring.core.annotation;
+package com.learn.spring.core.annotation;
 
 
 import java.lang.annotation.Annotation;

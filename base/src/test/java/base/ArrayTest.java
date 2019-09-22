@@ -54,6 +54,17 @@ public class ArrayTest {
             System.out.println(data.length);
         }
     }
+
+    /**
+     * 数组的拷贝是浅拷贝，只保证返回不一样的数组对象
+     * 不保证元素不一样。。。。
+     */
+    @Test
+    public void arrayCloneTest(){
+        Parent[] parents = {new Parent(), new Parent()};
+        Parent[] parents1 = parents.clone();
+        System.out.println(parents[0] == parents1[0]);
+    }
 }
 
 

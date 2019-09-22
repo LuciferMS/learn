@@ -1,23 +1,23 @@
-package org.litespring.aop.config;
+package com.learn.spring.aop.config;
 
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.litespring.beans.factory.support.BeanDefinitionReaderUtils;
+import com.learn.spring.aop.aspectj.AspectJBeforeAdvice;
+import com.learn.spring.beans.BeanDefinition;
+import com.learn.spring.beans.ConstructorArgument;
+import com.learn.spring.beans.PropertyValue;
+import com.learn.spring.beans.factory.support.BeanDefinitionReaderUtils;
+import com.learn.spring.beans.factory.support.BeanDefinitionRegistry;
 import org.dom4j.Element;
-import org.litespring.aop.aspectj.AspectJAfterReturningAdvice;
-import org.litespring.aop.aspectj.AspectJAfterThrowingAdvice;
-import org.litespring.aop.aspectj.AspectJBeforeAdvice;
-import org.litespring.aop.aspectj.AspectJExpressionPointcut;
-import org.litespring.beans.BeanDefinition;
-import org.litespring.beans.ConstructorArgument;
-import org.litespring.beans.PropertyValue;
-import org.litespring.beans.factory.config.RuntimeBeanReference;
-import org.litespring.beans.factory.support.BeanDefinitionRegistry;
-import org.litespring.beans.factory.support.GenericBeanDefinition;
-import org.litespring.util.StringUtils;
+import com.learn.spring.aop.aspectj.AspectJAfterReturningAdvice;
+import com.learn.spring.aop.aspectj.AspectJAfterThrowingAdvice;
+import com.learn.spring.aop.aspectj.AspectJExpressionPointcut;
+import com.learn.spring.beans.factory.config.RuntimeBeanReference;
+import com.learn.spring.beans.factory.support.GenericBeanDefinition;
+import com.learn.spring.util.StringUtils;
 
 
 
@@ -37,7 +37,7 @@ public class ConfigBeanDefinitionParser /*implements BeanDefinitionParser*/ {
 	private static final String AROUND = "around";
 	private static final String ASPECT_NAME_PROPERTY = "aspectName";
 	
-	public BeanDefinition parse(Element element,BeanDefinitionRegistry registry) {
+	public BeanDefinition parse(Element element, BeanDefinitionRegistry registry) {
 		
 		List<Element> childElts = element.elements();
 		for (Element elt: childElts) {

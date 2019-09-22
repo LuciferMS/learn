@@ -1,11 +1,11 @@
-package org.litespring.core.io;
+package com.learn.spring.core.io;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.litespring.util.Assert;
+import com.learn.spring.util.Assert;
 
 
 

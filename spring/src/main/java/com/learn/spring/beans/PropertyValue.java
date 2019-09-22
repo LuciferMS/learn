@@ -1,4 +1,4 @@
-package org.litespring.beans;
+package com.learn.spring.beans;
 
 public class PropertyValue {
 	private final String name;

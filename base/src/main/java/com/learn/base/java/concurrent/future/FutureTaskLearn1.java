@@ -1,4 +1,4 @@
-package com.learn.base.concurrent.future;
+package com.learn.base.java.concurrent.future;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;

@@ -1,11 +1,11 @@
-package org.litespring.test.v5;
+package com.learn.spring.test.v5;
 
 
 import java.lang.reflect.Method;
 
+import com.learn.spring.service.v5.PetStoreService;
+import com.learn.spring.tx.TransactionManager;
 import org.junit.Test;
-import org.litespring.service.v5.PetStoreService;
-import org.litespring.tx.TransactionManager;
 import org.springframework.cglib.proxy.Callback;
 import org.springframework.cglib.proxy.CallbackFilter;
 import org.springframework.cglib.proxy.Enhancer;

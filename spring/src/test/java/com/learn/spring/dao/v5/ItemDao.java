@@ -1,6 +1,7 @@
-package org.litespring.dao.v5;
+package com.learn.spring.dao.v5;
 
-import org.litespring.stereotype.Component;
+
+import com.learn.spring.stereotype.Component;
 
 @Component
 public class ItemDao {

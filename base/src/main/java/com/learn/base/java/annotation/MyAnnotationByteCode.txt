@@ -1,0 +1,3 @@
+public interface com.learn.base.java.annotation.MyAnnotation extends java.lang.annotation.Annotation {
+  public abstract java.lang.String say();
+}

@@ -1,4 +1,4 @@
-package base;
+package com.learn.base.java.others;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,4 +34,6 @@ public class FanXingTest {
         String s = strings.get(0);
         return s.toCharArray();
     }
+
+
 }

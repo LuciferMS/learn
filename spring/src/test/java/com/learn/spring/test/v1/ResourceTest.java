@@ -1,13 +1,11 @@
-package org.litespring.test.v1;
+package com.learn.spring.test.v1;
 
 import java.io.InputStream;
 
+import com.learn.spring.core.io.ClassPathResource;
+import com.learn.spring.core.io.Resource;
 import org.junit.Assert;
 import org.junit.Test;
-import org.litespring.core.io.ClassPathResource;
-import org.litespring.core.io.FileSystemResource;
-import org.litespring.core.io.Resource;
-
 public class ResourceTest {
 
 	@Test

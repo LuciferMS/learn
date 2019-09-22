@@ -1,4 +1,4 @@
-package algorithm.course.advanced5;
+package com.learn.base.algorithm.course.advanced5;
 
 import java.util.LinkedList;
 import java.util.Queue;

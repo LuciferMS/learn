@@ -1,7 +1,7 @@
 package base.pattern;
 
 import org.junit.Test;
-import pattern.singleton.lazy.Singleton4;
+import com.learn.base.pattern.singleton.lazy.Singleton4;
 
 import java.util.concurrent.*;
 

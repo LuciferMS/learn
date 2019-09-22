@@ -1,10 +1,13 @@
-package com.shensiyuan.zerocopy;
+package com.learn.netty.zerocopy;
 
 import java.io.FileInputStream;
 import java.net.InetSocketAddress;
 import java.nio.channels.FileChannel;
 import java.nio.channels.SocketChannel;
 
+/**
+ * @author Elliot
+ */
 public class NewIOClient {
 
     public static void main(String[] args) throws Exception {

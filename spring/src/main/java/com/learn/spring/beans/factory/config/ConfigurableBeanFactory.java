@@ -1,10 +1,33 @@
-package org.litespring.beans.factory.config;
+package com.learn.spring.beans.factory.config;
 
 import java.util.List;
 
-public interface ConfigurableBeanFactory extends AutowireCapableBeanFactory {	
+/**
+ * classloader相关
+ * @author Elliot
+ */
+public interface ConfigurableBeanFactory extends AutowireCapableBeanFactory {
+
+    /**
+     * 设置classloader
+     * @param beanClassLoader
+     */
 	void setBeanClassLoader(ClassLoader beanClassLoader);
-	ClassLoader getBeanClassLoader();	
+
+    /**
+     * 获取bean的classloader
+     * @return
+     */
+	ClassLoader getBeanClassLoader();
+
+    /**
+     *
+     * @param postProcessor
+     */
 	void addBeanPostProcessor(BeanPostProcessor postProcessor);
+
+    /**
+     * @return
+     */
 	List<BeanPostProcessor> getBeanPostProcessors();
 }

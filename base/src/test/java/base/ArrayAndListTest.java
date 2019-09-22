@@ -3,10 +3,7 @@ package base;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * @author Elliot
@@ -100,6 +97,21 @@ public class ArrayAndListTest {
          * 判断对象是不是数组
          */
         System.out.println(strings.getClass().isArray());
+    }
+
+    @Test
+    public void modCountTest(){
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(2);
+        list.add(2);
+        list.add(2);
+        Iterator<Integer> iterator = list.iterator();
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+            iterator.remove();
+            list.remove(0);//modCount++;
+        }
     }
 
 

@@ -1,4 +1,4 @@
-package algorithm;
+package com.learn.base.algorithm;
 
 import org.junit.Test;
 

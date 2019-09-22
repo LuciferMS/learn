@@ -1,6 +1,7 @@
 package com.learn.base.java.collection;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -12,5 +13,10 @@ import java.util.List;
 public class CollectionsCopyLearn {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>();
+        List<Integer> list1 = new ArrayList<>();
+        /**
+         * 这个方法有点东西
+         */
+        Collections.copy(list, list1);
     }
 }

@@ -1,4 +1,4 @@
-package org.litespring.beans.factory.annotation;
+package com.learn.spring.beans.factory.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

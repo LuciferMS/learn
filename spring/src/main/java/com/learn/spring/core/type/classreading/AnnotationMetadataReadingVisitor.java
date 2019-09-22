@@ -1,16 +1,16 @@
-package org.litespring.core.type.classreading;
+package com.learn.spring.core.type.classreading;
 
 import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
 
-import org.litespring.core.annotation.AnnotationAttributes;
-import org.litespring.core.type.AnnotationMetadata;
+import com.learn.spring.core.type.AnnotationMetadata;
+import com.learn.spring.core.annotation.AnnotationAttributes;
 import org.springframework.asm.AnnotationVisitor;
 import org.springframework.asm.Type;
 
-public class AnnotationMetadataReadingVisitor extends ClassMetadataReadingVisitor implements  AnnotationMetadata {
+public class AnnotationMetadataReadingVisitor extends ClassMetadataReadingVisitor implements AnnotationMetadata {
 	
 	private final Set<String> annotationSet = new LinkedHashSet<String>(4);
 	private final Map<String, AnnotationAttributes> attributeMap = new LinkedHashMap<String, AnnotationAttributes>(4);

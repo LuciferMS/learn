@@ -1,10 +1,11 @@
-package algorithm.course.base6;
+package com.learn.base.algorithm.course.base6;
 
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class Code_01_BFS {
+
 
     public static void bfs(Node node) {
         if (node == null) {

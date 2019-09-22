@@ -1,4 +1,4 @@
-package org.litespring.beans.factory.config;
+package com.learn.spring.beans.factory.config;
 
 public class RuntimeBeanReference {
 	private final String beanName;

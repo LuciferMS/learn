@@ -19,7 +19,7 @@ public class ConcreateDecorator2 extends Decorator {
     }
 
     private void doOtherThing(){
-        System.out.println("功能b");
+        System.out.println("功能B");
     }
 
 }

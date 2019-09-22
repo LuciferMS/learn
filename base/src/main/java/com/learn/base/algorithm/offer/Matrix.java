@@ -1,4 +1,4 @@
-package algorithm.offer;
+package com.learn.base.algorithm.offer;
 
 //回溯算法
 public class Matrix {

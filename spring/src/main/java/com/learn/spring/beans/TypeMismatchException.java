@@ -1,5 +1,9 @@
-package org.litespring.beans;
+package com.learn.spring.beans;
 
+/**
+ * 类型不匹配异常
+ * @author Administrator
+ */
 public class TypeMismatchException extends BeansException{
 	private transient Object value;
 

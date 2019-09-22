@@ -1,4 +1,4 @@
-package algorithm.leetcode;
+package com.learn.base.algorithm.leetcode;
 
 import java.util.HashMap;
 import java.util.LinkedList;

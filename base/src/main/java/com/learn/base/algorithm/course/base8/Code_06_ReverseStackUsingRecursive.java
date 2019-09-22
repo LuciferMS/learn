@@ -1,4 +1,4 @@
-package algorithm.course.base8;
+package com.learn.base.algorithm.course.base8;
 
 import java.util.Stack;
 

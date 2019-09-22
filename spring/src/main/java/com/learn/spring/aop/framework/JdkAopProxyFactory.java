@@ -1,4 +1,4 @@
-package org.litespring.aop.framework;
+package com.learn.spring.aop.framework;
 
 
 
@@ -12,9 +12,9 @@ import java.util.List;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.litespring.aop.Advice;
-import org.litespring.util.Assert;
-import org.litespring.util.ClassUtils;
+import com.learn.spring.aop.Advice;
+import com.learn.spring.util.Assert;
+import com.learn.spring.util.ClassUtils;
 
 public class JdkAopProxyFactory implements AopProxyFactory, InvocationHandler {
 

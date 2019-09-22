@@ -1,17 +1,15 @@
-package org.litespring.test.v5;
+package com.learn.spring.test.v5;
 
 import java.util.List;
 
+import com.learn.spring.aop.Advice;
+import com.learn.spring.aop.aspectj.AspectJAfterReturningAdvice;
+import com.learn.spring.aop.aspectj.AspectJAfterThrowingAdvice;
+import com.learn.spring.aop.aspectj.AspectJBeforeAdvice;
+import com.learn.spring.beans.factory.BeanFactory;
+import com.learn.spring.tx.TransactionManager;
 import org.junit.Assert;
 import org.junit.Test;
-import org.litespring.aop.Advice;
-import org.litespring.aop.aspectj.AspectJAfterReturningAdvice;
-import org.litespring.aop.aspectj.AspectJAfterThrowingAdvice;
-import org.litespring.aop.aspectj.AspectJBeforeAdvice;
-import org.litespring.beans.factory.BeanFactory;
-import org.litespring.tx.TransactionManager;
-
-
 
 public class BeanFactoryTestV5  extends AbstractV5Test{
 	
@@ -26,7 +24,7 @@ public class BeanFactoryTestV5  extends AbstractV5Test{
 		Assert.assertEquals(3, advices.size());
 		
 		{
-			AspectJBeforeAdvice advice = (AspectJBeforeAdvice)this.getAdvice(AspectJBeforeAdvice.class, advices);			
+			AspectJBeforeAdvice advice = (AspectJBeforeAdvice)this.getAdvice(AspectJBeforeAdvice.class, advices);
 					
 			Assert.assertEquals(TransactionManager.class.getMethod("start"), advice.getAdviceMethod());
 		
@@ -38,7 +36,7 @@ public class BeanFactoryTestV5  extends AbstractV5Test{
 		
 		
 		{
-			AspectJAfterReturningAdvice advice = (AspectJAfterReturningAdvice)this.getAdvice(AspectJAfterReturningAdvice.class, advices);			
+			AspectJAfterReturningAdvice advice = (AspectJAfterReturningAdvice)this.getAdvice(AspectJAfterReturningAdvice.class, advices);
 					
 			Assert.assertEquals(TransactionManager.class.getMethod("commit"), advice.getAdviceMethod());
 		
@@ -49,7 +47,7 @@ public class BeanFactoryTestV5  extends AbstractV5Test{
 		}
 		
 		{
-			AspectJAfterThrowingAdvice advice = (AspectJAfterThrowingAdvice)this.getAdvice(AspectJAfterThrowingAdvice.class, advices);			
+			AspectJAfterThrowingAdvice advice = (AspectJAfterThrowingAdvice)this.getAdvice(AspectJAfterThrowingAdvice.class, advices);
 					
 			Assert.assertEquals(TransactionManager.class.getMethod("rollback"), advice.getAdviceMethod());
 		

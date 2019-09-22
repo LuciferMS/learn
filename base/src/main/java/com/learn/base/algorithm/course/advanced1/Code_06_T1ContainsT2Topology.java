@@ -1,4 +1,4 @@
-package algorithm.course.advanced1;
+package com.learn.base.algorithm.course.advanced1;
 
 public class Code_06_T1ContainsT2Topology {
 

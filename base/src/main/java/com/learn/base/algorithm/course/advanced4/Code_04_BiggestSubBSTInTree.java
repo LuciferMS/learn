@@ -1,4 +1,4 @@
-package algorithm.course.advanced4;
+package com.learn.base.algorithm.course.advanced4;
 
 public class Code_04_BiggestSubBSTInTree {
 

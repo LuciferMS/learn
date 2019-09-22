@@ -1,4 +1,4 @@
-package com.shengsiyuan.netty.handler3;
+package com.learn.netty.handler3;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;

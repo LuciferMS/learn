@@ -1,4 +1,4 @@
-package org.litespring.dao.v3;
+package com.learn.spring.dao.v3;
 
 public class AccountDao {
 

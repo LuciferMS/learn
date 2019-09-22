@@ -1,4 +1,4 @@
-package org.litespring.util;
+package com.learn.spring.util;
 
 import java.util.ArrayList;
 import java.util.List;

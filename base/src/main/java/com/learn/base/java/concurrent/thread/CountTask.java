@@ -1,4 +1,4 @@
-package com.learn.base.concurrent.thread;
+package com.learn.base.java.concurrent.thread;
 
 
 import java.util.concurrent.*;

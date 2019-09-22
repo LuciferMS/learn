@@ -1,9 +1,13 @@
-package org.litespring.beans.factory.config;
+package com.learn.spring.beans.factory.config;
 
 import java.lang.reflect.Field;
 
-import org.litespring.util.Assert;
+import com.learn.spring.util.Assert;
 
+/**
+ * 依赖描述符
+ * @author Elliot
+ */
 public class DependencyDescriptor {
 	private  Field field;
 	private boolean required;

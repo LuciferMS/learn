@@ -1,4 +1,4 @@
-package algorithm.course.base4;
+package com.learn.base.algorithm.course.base4;
 
 import java.util.LinkedList;
 import java.util.Queue;

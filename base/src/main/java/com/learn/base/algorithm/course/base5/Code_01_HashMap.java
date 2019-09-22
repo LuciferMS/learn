@@ -1,4 +1,4 @@
-package algorithm.course.base5;
+package com.learn.base.algorithm.course.base5;
 
 import java.util.ArrayList;
 import java.util.HashMap;

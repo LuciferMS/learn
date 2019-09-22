@@ -1,7 +1,7 @@
-package pattern.proxy.staticProxy;
+package com.learn.base.pattern.proxy.staticProxy;
 
-import pattern.proxy.ISkillAction;
-import pattern.proxy.Star;
+import com.learn.base.pattern.proxy.ISkillAction;
+import com.learn.base.pattern.proxy.Star;
 
 /**
  * @program: learn

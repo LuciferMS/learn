@@ -1,11 +1,15 @@
-package org.litespring.beans.propertyeditors;
+package com.learn.spring.beans.propertyeditors;
 
 import java.beans.PropertyEditorSupport;
 import java.text.NumberFormat;
 
-import org.litespring.util.NumberUtils;
-import org.litespring.util.StringUtils;
+import com.learn.spring.util.NumberUtils;
+import com.learn.spring.util.StringUtils;
 
+/**
+ * 属性编辑器 number类型
+ * @author Elliot
+ */
 public class CustomNumberEditor extends PropertyEditorSupport {
 
 	private final Class<? extends Number> numberClass;

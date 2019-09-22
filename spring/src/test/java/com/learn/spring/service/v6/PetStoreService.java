@@ -1,8 +1,8 @@
-package org.litespring.service.v6;
+package com.learn.spring.service.v6;
 
 
-import org.litespring.stereotype.Component;
-import org.litespring.util.MessageTracker;
+import com.learn.spring.stereotype.Component;
+import com.learn.spring.util.MessageTracker;
 
 @Component(value="petStore")
 public class PetStoreService implements IPetStoreService {

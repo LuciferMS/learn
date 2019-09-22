@@ -1,8 +1,8 @@
-package org.litespring.test.v2;
+package com.learn.spring.test.v2;
 
+import com.learn.spring.beans.propertyeditors.CustomBooleanEditor;
 import org.junit.Assert;
 import org.junit.Test;
-import org.litespring.beans.propertyeditors.CustomBooleanEditor;
 
 
 

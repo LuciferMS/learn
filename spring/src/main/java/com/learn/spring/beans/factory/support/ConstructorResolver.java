@@ -1,25 +1,25 @@
-package org.litespring.beans.factory.support;
+package com.learn.spring.beans.factory.support;
 
 import java.lang.reflect.Constructor;
 import java.util.List;
 
+import com.learn.spring.beans.BeanDefinition;
+import com.learn.spring.beans.ConstructorArgument;
+import com.learn.spring.beans.SimpleTypeConverter;
+import com.learn.spring.beans.factory.BeanCreationException;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.litespring.beans.BeanDefinition;
-import org.litespring.beans.ConstructorArgument;
-import org.litespring.beans.SimpleTypeConverter;
-import org.litespring.beans.factory.BeanCreationException;
-import org.litespring.beans.factory.config.ConfigurableBeanFactory;
 
 
-
+/**
+ * 构造器注入
+ * @author Elliot
+ */
 public class ConstructorResolver {
 
 	protected final Log logger = LogFactory.getLog(getClass());
 	
-	
 	private final AbstractBeanFactory beanFactory;
-
 
 	
 	public ConstructorResolver(AbstractBeanFactory beanFactory) {

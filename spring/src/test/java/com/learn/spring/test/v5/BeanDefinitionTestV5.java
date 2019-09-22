@@ -1,19 +1,19 @@
-package org.litespring.test.v5;
+package com.learn.spring.test.v5;
 
 import java.util.List;
 
+import com.learn.spring.aop.aspectj.AspectJBeforeAdvice;
+import com.learn.spring.aop.aspectj.AspectJExpressionPointcut;
+import com.learn.spring.aop.config.AspectInstanceFactory;
+import com.learn.spring.aop.config.MethodLocatingFactory;
+import com.learn.spring.beans.BeanDefinition;
+import com.learn.spring.beans.ConstructorArgument;
+import com.learn.spring.beans.PropertyValue;
+import com.learn.spring.beans.factory.config.RuntimeBeanReference;
+import com.learn.spring.beans.factory.support.DefaultBeanFactory;
+import com.learn.spring.tx.TransactionManager;
 import org.junit.Assert;
 import org.junit.Test;
-import org.litespring.aop.aspectj.AspectJBeforeAdvice;
-import org.litespring.aop.aspectj.AspectJExpressionPointcut;
-import org.litespring.aop.config.AspectInstanceFactory;
-import org.litespring.aop.config.MethodLocatingFactory;
-import org.litespring.beans.BeanDefinition;
-import org.litespring.beans.ConstructorArgument.ValueHolder;
-import org.litespring.beans.PropertyValue;
-import org.litespring.beans.factory.config.RuntimeBeanReference;
-import org.litespring.beans.factory.support.DefaultBeanFactory;
-import org.litespring.tx.TransactionManager;
 
 public class BeanDefinitionTestV5 extends AbstractV5Test{
 
@@ -53,7 +53,7 @@ public class BeanDefinitionTestV5 extends AbstractV5Test{
 			//这个BeanDefinition是“合成的”
 			Assert.assertTrue(bd.isSynthetic());
 			
-			List<ValueHolder> args = bd.getConstructorArgument().getArgumentValues();
+			List<ConstructorArgument.ValueHolder> args = bd.getConstructorArgument().getArgumentValues();
 			Assert.assertEquals(3, args.size());
 			
 			//构造函数第一个参数

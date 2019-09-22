@@ -1,4 +1,4 @@
-package algorithm.course.advanced1;
+package com.learn.base.algorithm.course.advanced1;
 
 public class Code_08_MaxDistanceInTree {
 

@@ -1,4 +1,4 @@
-package com.learn.base.concurrent.util;
+package com.learn.base.java.concurrent.util;
 
 import java.util.concurrent.CountDownLatch;
 
@@ -8,10 +8,11 @@ import java.util.concurrent.CountDownLatch;
  * @author: Elliot
  * @create: 2019-07-17 20:52
  * 这里使用CountDownLatch计算一个数组的每一行的和，然后合并每一行的计算结果...
+ * 一个等多个
  **/
 public class CountDownLatchLearn2 extends Thread {
 
-    private CountDownLatch countDownLatch;
+    private final CountDownLatch countDownLatch;
     private Task task;
     private int[] nums;
     private int index;
@@ -58,7 +59,7 @@ public class CountDownLatchLearn2 extends Thread {
         countDownLatch.countDown();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         int[][] data = {
                 {1, 2, 3, 4, 5},
                 {2, 2, 3, 4, 5},
@@ -66,14 +67,11 @@ public class CountDownLatchLearn2 extends Thread {
         };
         CountDownLatch countDownLatch = new CountDownLatch(3);
         Task task = new Task(3);
-        for (int i = 0; i < 3; i++) {
+        for (int i = 0; i < data.length; i++) {
             new CountDownLatchLearn2(countDownLatch, data[i], i, task).start();
         }
-        try {
-            countDownLatch.await();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        //这东西响应中断的....
+        countDownLatch.await();
         task.getResult();
     }
 

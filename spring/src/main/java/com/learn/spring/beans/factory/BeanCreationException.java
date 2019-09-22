@@ -1,7 +1,11 @@
-package org.litespring.beans.factory;
+package com.learn.spring.beans.factory;
 
-import org.litespring.beans.BeansException;
+import com.learn.spring.beans.BeansException;
 
+/**
+ * bean创建异常
+ * @author Elliot
+ */
 public class BeanCreationException extends BeansException {
 	private String beanName;
 	public BeanCreationException(String msg) {

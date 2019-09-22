@@ -1,11 +1,11 @@
-package org.litespring.test.v4;
+package com.learn.spring.test.v4;
 
 import java.io.IOException;
 
+import com.learn.spring.core.io.Resource;
+import com.learn.spring.core.io.support.PackageResourceLoader;
 import org.junit.Assert;
 import org.junit.Test;
-import org.litespring.core.io.Resource;
-import org.litespring.core.io.support.PackageResourceLoader;
 
 public class PackageResourceLoaderTest {
 

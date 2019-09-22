@@ -1,7 +1,12 @@
-package org.litespring.context;
+package com.learn.spring.context;
 
-import org.litespring.beans.factory.BeanFactory;
+import com.learn.spring.beans.factory.BeanFactory;
 
-public interface ApplicationContext extends BeanFactory{
+/**
+ * 对beanFactory的包装，屏蔽beanFactory实现细节
+ * 提供用户的使用的api
+ * @author Elliot
+ */
+public interface ApplicationContext extends BeanFactory {
 
 }

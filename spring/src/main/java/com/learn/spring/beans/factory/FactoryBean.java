@@ -1,6 +1,9 @@
-package org.litespring.beans.factory;
+package com.learn.spring.beans.factory;
 
 
+/**
+ * @author Elliot
+ */
 public interface FactoryBean<T> {
 
 	

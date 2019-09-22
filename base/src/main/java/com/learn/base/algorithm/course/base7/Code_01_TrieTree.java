@@ -1,4 +1,4 @@
-package algorithm.course.base7;
+package com.learn.base.algorithm.course.base7;
 
 public class Code_01_TrieTree {
 

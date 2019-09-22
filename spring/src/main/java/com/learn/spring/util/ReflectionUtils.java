@@ -1,5 +1,5 @@
 
-package org.litespring.util;
+package com.learn.spring.util;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

@@ -1,4 +1,4 @@
-package pattern.proxy.dynamicProxy;
+package com.learn.base.pattern.proxy.dynamicProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -6,6 +6,8 @@ import java.lang.reflect.Method;
 /**
  * @program: learn
  * @description: 代理方法调用处理器
+ * 使用动态代理其实要实现的是invoke方法，看看要代理的是什么方法
+ * 拓展可以看看注解的原理....
  * @author: Elliot
  * @create: 2019-07-21 14:39
  **/

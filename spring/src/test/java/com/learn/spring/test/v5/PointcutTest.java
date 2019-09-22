@@ -1,14 +1,12 @@
-package org.litespring.test.v5;
+package com.learn.spring.test.v5;
 
 import java.lang.reflect.Method;
 
+import com.learn.spring.aop.MethodMatcher;
+import com.learn.spring.aop.aspectj.AspectJExpressionPointcut;
+import com.learn.spring.service.v5.PetStoreService;
 import org.junit.Assert;
 import org.junit.Test;
-import org.litespring.aop.MethodMatcher;
-import org.litespring.aop.aspectj.AspectJExpressionPointcut;
-import org.litespring.dao.v5.AccountDao;
-import org.litespring.service.v5.PetStoreService;
-
 
 
 public class PointcutTest {
@@ -33,7 +31,7 @@ public class PointcutTest {
 		}
 		
 		{
-			Class<?> targetClass = org.litespring.service.v4.PetStoreService.class;			
+			Class<?> targetClass = com.learn.spring.service.v4.PetStoreService.class;
 		
 			Method method = targetClass.getMethod("getAccountDao");		
 			Assert.assertFalse(mm.matches(method));

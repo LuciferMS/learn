@@ -1,4 +1,4 @@
-package spring;
+package com.learn.base.spring;
 
 /**
  * @program: learn

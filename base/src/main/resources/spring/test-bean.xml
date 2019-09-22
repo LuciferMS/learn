@@ -7,6 +7,6 @@
             http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
             http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
 
-    <bean id="simpleBean" class="spring.SimpleBean"/>
+    <bean id="simpleBean" class="com.learn.base.spring.SimpleBean"/>
 
 </beans>

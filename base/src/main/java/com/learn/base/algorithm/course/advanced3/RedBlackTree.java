@@ -1,4 +1,6 @@
-package algorithm.course.advanced3;
+package com.learn.base.algorithm.course.advanced3;
+
+import com.learn.base.algorithm.course.advanced3.AbstractSelfBalancingBinarySearchTree;
 
 /**
  * Not implemented by zuochengyun

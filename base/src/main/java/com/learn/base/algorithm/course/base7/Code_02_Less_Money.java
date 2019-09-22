@@ -1,4 +1,4 @@
-package algorithm.course.base7;
+package com.learn.base.algorithm.course.base7;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

@@ -1,6 +1,6 @@
-package org.litespring.beans.factory.support;
+package com.learn.spring.beans.factory.support;
 
-import org.litespring.beans.BeanDefinition;
+import com.learn.spring.beans.BeanDefinition;
 
 public interface BeanNameGenerator {
 

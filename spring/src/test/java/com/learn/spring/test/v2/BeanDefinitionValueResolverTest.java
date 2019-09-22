@@ -1,21 +1,22 @@
-package org.litespring.test.v2;
+package com.learn.spring.test.v2;
 
+import com.learn.spring.beans.factory.config.RuntimeBeanReference;
+import com.learn.spring.beans.factory.config.TypedStringValue;
+import com.learn.spring.beans.factory.support.BeanDefinitionValueResolver;
+import com.learn.spring.beans.factory.support.DefaultBeanFactory;
+import com.learn.spring.beans.factory.xml.XmlBeanDefinitionReader;
+import com.learn.spring.core.io.ClassPathResource;
 import org.junit.Assert;
 import org.junit.Test;
-import org.litespring.beans.factory.config.RuntimeBeanReference;
-import org.litespring.beans.factory.config.TypedStringValue;
-import org.litespring.beans.factory.support.BeanDefinitionValueResolver;
-import org.litespring.beans.factory.support.DefaultBeanFactory;
-import org.litespring.beans.factory.xml.XmlBeanDefinitionReader;
-import org.litespring.core.io.ClassPathResource;
-import org.litespring.dao.v2.AccountDao;
+
+import com.learn.spring.dao.v2.AccountDao;
 
 public class BeanDefinitionValueResolverTest {
 
 	@Test
 	public void testResolveRuntimeBeanReference() {
 		DefaultBeanFactory factory = new DefaultBeanFactory();
-		XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);		
+		XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(factory);
 		reader.loadBeanDefinitions(new ClassPathResource("petstore-v2.xml"));
 		
 		BeanDefinitionValueResolver resolver = new BeanDefinitionValueResolver(factory);

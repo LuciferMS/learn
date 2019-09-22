@@ -1,4 +1,4 @@
-package com.learn.base.concurrent.executor;
+package com.learn.base.java.concurrent.executor;
 
 
 import java.util.concurrent.*;
@@ -50,10 +50,10 @@ public class ThreadPoolLearn {
          *                  的调度开销，这样也会降低吞吐量。
          * threadFactory: 线程工厂，用来创建线程
          * handler: 表示拒绝策略,有下面四种：
-         *              1.ThreadPoolExecutor.AbortPolicy:丢弃任务并抛出RejectedExecutionException异常。默认。
-         *              2.ThreadPoolExecutor.DiscardPolicy：也是丢弃任务，但是不抛出异常。
-         *              3.ThreadPoolExecutor.DiscardOldestPolicy：丢弃队列最前面的任务，然后重新尝试执行任务（重复此过程）
-         *              4.ThreadPoolExecutor.CallerRunsPolicy：由调用线程处理该任务
+         *              1.ThreadPoolExecutor.AbortPolicy:丢弃任务并抛出RejectedExecutionException异常。默认。看了源码之后，其实就是不让任务进队列，跑出异常，天真。
+         *              2.ThreadPoolExecutor.DiscardPolicy：也是丢弃任务，但是不抛出异常。其实就是什么都不做。。天真。。
+         *              3.ThreadPoolExecutor.DiscardOldestPolicy：丢弃队列最前面的任务，然后重新尝试执行任务（重复此过程）,poll(),execute();
+         *              4.ThreadPoolExecutor.CallerRunsPolicy：由调用线程处理该任务，你好狠，原地调用哈哈哈。。。
          * 2.java doc中不提倡我们这样创建线程池，提供了三种方式给我们
          *          2.1.Executors.newCachedThreadPool() 创建缓冲池，池子容量是Integer.MAX_VALUE
          *          2.2.Executors.newSingleThreadExecutor() 创建一个容量为1的缓冲池

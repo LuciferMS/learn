@@ -1,4 +1,4 @@
-package algorithm.course.base1;
+package com.learn.base.algorithm.course.base1;
 
 public class Code_12_SmallSum {
 

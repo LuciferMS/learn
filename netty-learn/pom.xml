@@ -11,5 +11,8 @@
 
     <artifactId>netty-learn</artifactId>
 
+    <dependencies>
+
+    </dependencies>
 
 </project>

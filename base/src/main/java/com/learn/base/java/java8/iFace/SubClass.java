@@ -1,4 +1,4 @@
-package com.learn.base.java8.iFace;
+package com.learn.base.java.java8.iFace;
 
 public class SubClass implements InterFaceTest {
 

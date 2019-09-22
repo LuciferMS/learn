@@ -1,4 +1,4 @@
-package com.shengsiyuan.netty.handler3;
+package com.learn.netty.handler3;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;

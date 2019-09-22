@@ -1,4 +1,4 @@
-package org.litespring.aop.framework;
+package com.learn.spring.aop.framework;
 /*
  * Copyright 2002-2013 the original author or authors.
  *
@@ -19,8 +19,7 @@ package org.litespring.aop.framework;
 import java.lang.reflect.Method;
 import java.util.List;
 
-import org.litespring.aop.Advice;
-
+import com.learn.spring.aop.Advice;
 
 
 public interface AopConfig  {

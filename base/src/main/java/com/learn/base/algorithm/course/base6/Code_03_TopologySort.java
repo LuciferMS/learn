@@ -1,4 +1,4 @@
-package algorithm.course.base6;
+package com.learn.base.algorithm.course.base6;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Queue;
 
 public class Code_03_TopologySort {
+
 
     // directed graph and no loop
     public static List<Node> sortedTopology(Graph graph) {

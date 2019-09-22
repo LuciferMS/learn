@@ -1,7 +1,7 @@
-package org.litespring.core.type.classreading;
+package com.learn.spring.core.type.classreading;
 
-import org.litespring.core.type.ClassMetadata;
-import org.litespring.util.ClassUtils;
+import com.learn.spring.core.type.ClassMetadata;
+import com.learn.spring.util.ClassUtils;
 import org.springframework.asm.ClassVisitor;
 import org.springframework.asm.Opcodes;
 import org.springframework.asm.SpringAsmInfo;

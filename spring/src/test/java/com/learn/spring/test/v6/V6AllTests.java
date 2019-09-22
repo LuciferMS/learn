@@ -1,4 +1,4 @@
-package org.litespring.test.v6;
+package com.learn.spring.test.v6;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;

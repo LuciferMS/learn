@@ -1,4 +1,4 @@
-package org.litespring.beans.factory.support;
+package com.learn.spring.beans.factory.support;
 
 import java.beans.BeanInfo;
 import java.beans.Introspector;
@@ -8,45 +8,60 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.learn.spring.beans.BeanDefinition;
+import com.learn.spring.beans.BeansException;
+import com.learn.spring.beans.PropertyValue;
+import com.learn.spring.beans.SimpleTypeConverter;
+import com.learn.spring.beans.factory.BeanCreationException;
+import com.learn.spring.beans.factory.BeanFactoryAware;
+import com.learn.spring.beans.factory.NoSuchBeanDefinitionException;
+import com.learn.spring.beans.factory.config.InstantiationAwareBeanPostProcessor;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.litespring.beans.BeanDefinition;
-import org.litespring.beans.BeansException;
-import org.litespring.beans.PropertyValue;
-import org.litespring.beans.SimpleTypeConverter;
-import org.litespring.beans.factory.BeanCreationException;
-import org.litespring.beans.factory.BeanFactoryAware;
-import org.litespring.beans.factory.NoSuchBeanDefinitionException;
-import org.litespring.beans.factory.config.BeanPostProcessor;
-import org.litespring.beans.factory.config.DependencyDescriptor;
-import org.litespring.beans.factory.config.InstantiationAwareBeanPostProcessor;
-import org.litespring.util.ClassUtils;
+import com.learn.spring.beans.factory.config.BeanPostProcessor;
+import com.learn.spring.beans.factory.config.DependencyDescriptor;
+import com.learn.spring.util.ClassUtils;
 
+/**
+ * BeanFactory默认实现
+ * @author Elliot
+ */
 public class DefaultBeanFactory  extends AbstractBeanFactory
 	implements BeanDefinitionRegistry{
+
 	private static final Log logger = LogFactory.getLog(DefaultBeanFactory.class);
+
 	private List<BeanPostProcessor> beanPostProcessors = new ArrayList<BeanPostProcessor>();
 	
 	private final Map<String, BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<String, BeanDefinition>(64);
+
 	private ClassLoader beanClassLoader;
 	
 	public DefaultBeanFactory() {
 		
 	}
-	public void addBeanPostProcessor(BeanPostProcessor postProcessor){
+	@Override
+    public void addBeanPostProcessor(BeanPostProcessor postProcessor){
 		this.beanPostProcessors.add(postProcessor);
 	}
-	public List<BeanPostProcessor> getBeanPostProcessors() {
+
+	@Override
+    public List<BeanPostProcessor> getBeanPostProcessors() {
 		return this.beanPostProcessors;
 	}
-	public void registerBeanDefinition(String beanID,BeanDefinition bd){
+
+	@Override
+    public void registerBeanDefinition(String beanID, BeanDefinition bd){
 		this.beanDefinitionMap.put(beanID, bd);
 	}
-	public BeanDefinition getBeanDefinition(String beanID) {
-			
+
+	@Override
+    public BeanDefinition getBeanDefinition(String beanID) {
 		return this.beanDefinitionMap.get(beanID);
 	}
-	public List<Object> getBeansByType(Class<?> type){
+
+	@Override
+    public List<Object> getBeansByType(Class<?> type){
 		List<Object> result = new ArrayList<Object>();
 		List<String> beanIDs = this.getBeanIDsByType(type);
 		for(String beanID : beanIDs){
@@ -73,7 +88,8 @@ public class DefaultBeanFactory  extends AbstractBeanFactory
 		return result;
 	}
 
-	public Object getBean(String beanID) {
+	@Override
+    public Object getBean(String beanID) {
 		BeanDefinition bd = this.getBeanDefinition(beanID);
 		if(bd == null){
 			return null;
@@ -89,17 +105,17 @@ public class DefaultBeanFactory  extends AbstractBeanFactory
 		} 
 		return createBean(bd);
 	}
-	protected Object createBean(BeanDefinition bd) {
+
+	@Override
+    protected Object createBean(BeanDefinition bd) {
 		//创建实例
 		Object bean = instantiateBean(bd);
-		//设置属性
+		//设置属性 setter注入
 		populateBean(bd, bean);
-		
 		bean = initializeBean(bd,bean);
-		
-		return bean;		
-		
+		return bean;
 	}
+
 	private Object instantiateBean(BeanDefinition bd) {
 		if(bd.hasConstructorArgumentValues()){
 			ConstructorResolver resolver = new ConstructorResolver(this);
@@ -124,13 +140,13 @@ public class DefaultBeanFactory  extends AbstractBeanFactory
 		}
 		
 		List<PropertyValue> pvs = bd.getPropertyValues();
-		
+
 		if (pvs == null || pvs.isEmpty()) {
 			return;
 		}
 		
 		BeanDefinitionValueResolver valueResolver = new BeanDefinitionValueResolver(this);
-		SimpleTypeConverter converter = new SimpleTypeConverter(); 
+		SimpleTypeConverter converter = new SimpleTypeConverter();
 		try{
 			for (PropertyValue pv : pvs){
 				String propertyName = pv.getName();
@@ -146,13 +162,12 @@ public class DefaultBeanFactory  extends AbstractBeanFactory
 						break;
 					}
 				}
- 
-				
 			}
 		}catch(Exception ex){
 			throw new BeanCreationException("Failed to obtain BeanInfo for class [" + bd.getBeanClassName() + "]", ex);
 		}	
 	}
+
 	protected Object initializeBean(BeanDefinition bd, Object bean)  {
 		invokeAwareMethods(bean);	
         //Todo，调用Bean的init方法，暂不实现
@@ -161,6 +176,7 @@ public class DefaultBeanFactory  extends AbstractBeanFactory
 		}
 		return bean;
 	}
+
 	public Object applyBeanPostProcessorsAfterInitialization(Object existingBean, String beanName)
 			throws BeansException {
 
@@ -173,19 +189,23 @@ public class DefaultBeanFactory  extends AbstractBeanFactory
 		}
 		return result;
 	}
+
 	private void invokeAwareMethods(final Object bean) {
 		if (bean instanceof BeanFactoryAware) {
 			((BeanFactoryAware) bean).setBeanFactory(this);
 		}
 	}
 
-	public void setBeanClassLoader(ClassLoader beanClassLoader) {
+	@Override
+    public void setBeanClassLoader(ClassLoader beanClassLoader) {
 		this.beanClassLoader = beanClassLoader;
 	}
 
+    @Override
     public ClassLoader getBeanClassLoader() {
 		return (this.beanClassLoader != null ? this.beanClassLoader : ClassUtils.getDefaultClassLoader());
 	}
+    @Override
     public Object resolveDependency(DependencyDescriptor descriptor) {
 		
 		Class<?> typeToMatch = descriptor.getDependencyType();
@@ -210,6 +230,7 @@ public class DefaultBeanFactory  extends AbstractBeanFactory
 			}
 		}
 	}
+    @Override
     public Class<?> getType(String name) throws NoSuchBeanDefinitionException {
 		BeanDefinition bd = this.getBeanDefinition(name);
 		if(bd == null){

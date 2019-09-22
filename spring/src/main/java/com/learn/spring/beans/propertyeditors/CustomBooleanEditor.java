@@ -1,11 +1,15 @@
-package org.litespring.beans.propertyeditors;
+package com.learn.spring.beans.propertyeditors;
 
 
 import java.beans.PropertyEditorSupport;
 
-import org.litespring.util.StringUtils;
+import com.learn.spring.util.StringUtils;
 
 
+/**
+ * 属性编辑器，boolean
+ * @author Elliot
+ */
 public class CustomBooleanEditor extends PropertyEditorSupport {
 
 	public static final String VALUE_TRUE = "true";

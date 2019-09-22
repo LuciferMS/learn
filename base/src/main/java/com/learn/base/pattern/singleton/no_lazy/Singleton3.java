@@ -1,4 +1,4 @@
-package pattern.singleton.no_lazy;
+package com.learn.base.pattern.singleton.no_lazy;
 
 /**
  * @program: learn

@@ -1,13 +1,17 @@
-package org.litespring.beans;
+package com.learn.spring.beans;
 
 import java.beans.PropertyEditor;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.litespring.beans.propertyeditors.CustomBooleanEditor;
-import org.litespring.beans.propertyeditors.CustomNumberEditor;
-import org.litespring.util.ClassUtils;
+import com.learn.spring.beans.propertyeditors.CustomBooleanEditor;
+import com.learn.spring.beans.propertyeditors.CustomNumberEditor;
+import com.learn.spring.util.ClassUtils;
 
+/**
+ * 类型转化器
+ * @author Elliot
+ */
 public class SimpleTypeConverter implements TypeConverter {
 	
 	private Map<Class<?>, PropertyEditor> defaultEditors;
@@ -15,7 +19,8 @@ public class SimpleTypeConverter implements TypeConverter {
 	public SimpleTypeConverter(){
 		
 	}
-	public <T> T convertIfNecessary(Object value, Class<T> requiredType) throws TypeMismatchException {
+	@Override
+    public <T> T convertIfNecessary(Object value, Class<T> requiredType) throws TypeMismatchException {
 		
 		if(ClassUtils.isAssignableValue(requiredType, value)){
 			return (T)value;			

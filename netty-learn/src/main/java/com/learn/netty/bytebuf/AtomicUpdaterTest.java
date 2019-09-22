@@ -1,4 +1,4 @@
-package com.shengsiyuan.netty.bytebuf;
+package com.learn.netty.bytebuf;
 
 import java.util.concurrent.atomic.AtomicIntegerFieldUpdater;
 

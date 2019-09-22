@@ -1,4 +1,4 @@
-package org.litespring.core.io.support;
+package com.learn.spring.core.io.support;
 
 import java.io.File;
 import java.io.IOException;
@@ -7,12 +7,12 @@ import java.util.Collections;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
+import com.learn.spring.core.io.FileSystemResource;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.litespring.core.io.FileSystemResource;
-import org.litespring.core.io.Resource;
-import org.litespring.util.Assert;
-import org.litespring.util.ClassUtils;
+import com.learn.spring.core.io.Resource;
+import com.learn.spring.util.Assert;
+import com.learn.spring.util.ClassUtils;
 
 public class PackageResourceLoader  {
 

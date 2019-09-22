@@ -1,4 +1,4 @@
-package algorithm.course.base6;
+package com.learn.base.algorithm.course.base6;
 
 import java.util.HashMap;
 import java.util.HashSet;

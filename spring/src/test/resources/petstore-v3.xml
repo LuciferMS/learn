@@ -5,16 +5,16 @@
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 	
   <bean id="petStore"
-        class="org.litespring.service.v3.PetStoreService" >  
+        class="com.learn.spring.service.v3.PetStoreService" >
    	<constructor-arg  ref="accountDao"/>
    	<constructor-arg  ref="itemDao"/>
    	<constructor-arg  value="1"/>       
   </bean>
 
-   <bean id="itemDao" class="org.litespring.dao.v3.ItemDao">
+   <bean id="itemDao" class="com.learn.spring.dao.v3.ItemDao">
    
   </bean>
-  <bean id="accountDao"  class="org.litespring.dao.v3.AccountDao">
+  <bean id="accountDao"  class="com.learn.spring.dao.v3.AccountDao">
    
   </bean>
 

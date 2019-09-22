@@ -1,4 +1,4 @@
-package algorithm.course.base8;
+package com.learn.base.algorithm.course.base8;
 
 public class Code_09_Knapsack {
 

@@ -1,11 +1,11 @@
-package org.litespring.beans.factory.support;
+package com.learn.spring.beans.factory.support;
 
-import org.litespring.beans.BeanDefinition;
-import org.litespring.beans.BeansException;
-import org.litespring.beans.factory.BeanCreationException;
-import org.litespring.beans.factory.FactoryBean;
-import org.litespring.beans.factory.config.RuntimeBeanReference;
-import org.litespring.beans.factory.config.TypedStringValue;
+import com.learn.spring.beans.BeanDefinition;
+import com.learn.spring.beans.BeansException;
+import com.learn.spring.beans.factory.BeanCreationException;
+import com.learn.spring.beans.factory.FactoryBean;
+import com.learn.spring.beans.factory.config.RuntimeBeanReference;
+import com.learn.spring.beans.factory.config.TypedStringValue;
 
 public class BeanDefinitionValueResolver {
 	private final AbstractBeanFactory beanFactory;

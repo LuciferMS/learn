@@ -1,10 +1,10 @@
-package org.litespring.aop.config;
+package com.learn.spring.aop.config;
 
 
 
-import org.litespring.beans.factory.BeanFactory;
-import org.litespring.beans.factory.BeanFactoryAware;
-import org.litespring.util.StringUtils;
+import com.learn.spring.beans.factory.BeanFactory;
+import com.learn.spring.beans.factory.BeanFactoryAware;
+import com.learn.spring.util.StringUtils;
 
 
 /**
@@ -15,7 +15,7 @@ import org.litespring.util.StringUtils;
  * @author Juergen Hoeller
  * @since 2.0
  */
-public class AspectInstanceFactory implements BeanFactoryAware{
+public class AspectInstanceFactory implements BeanFactoryAware {
 
 	private String aspectBeanName;
 

@@ -1,5 +1,8 @@
-package org.litespring.beans;
+package com.learn.spring.beans;
 
+/**
+ * @author Elliot
+ */
 public class BeansException extends RuntimeException {
 	public BeansException(String msg) {
 		super(msg);	}

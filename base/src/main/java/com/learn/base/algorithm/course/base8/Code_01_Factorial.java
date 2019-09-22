@@ -1,4 +1,4 @@
-package algorithm.course.base8;
+package com.learn.base.algorithm.course.base8;
 
 public class Code_01_Factorial {
     public static long getFactorial1(int n) {

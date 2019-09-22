@@ -1,12 +1,12 @@
-package org.litespring.aop.aspectj;
+package com.learn.spring.aop.aspectj;
 
 import java.lang.reflect.Method;
 
-import org.litespring.aop.Advice;
-import org.litespring.aop.Pointcut;
-import org.litespring.aop.config.AspectInstanceFactory;
+import com.learn.spring.aop.Advice;
+import com.learn.spring.aop.Pointcut;
+import com.learn.spring.aop.config.AspectInstanceFactory;
 
-public abstract class AbstractAspectJAdvice implements Advice{
+public abstract class AbstractAspectJAdvice implements Advice {
 	
 	
 	protected Method adviceMethod;	

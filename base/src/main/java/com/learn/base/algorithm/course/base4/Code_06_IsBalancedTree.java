@@ -1,4 +1,4 @@
-package algorithm.course.base4;
+package com.learn.base.algorithm.course.base4;
 
 public class Code_06_IsBalancedTree {
 

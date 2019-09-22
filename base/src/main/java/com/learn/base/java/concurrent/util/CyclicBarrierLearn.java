@@ -1,4 +1,4 @@
-package com.learn.base.concurrent.util;
+package com.learn.base.java.concurrent.util;
 
 import java.util.concurrent.CyclicBarrier;
 import java.util.concurrent.ExecutorService;

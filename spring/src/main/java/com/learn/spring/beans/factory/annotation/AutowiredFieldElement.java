@@ -1,11 +1,11 @@
-package org.litespring.beans.factory.annotation;
+package com.learn.spring.beans.factory.annotation;
 
 import java.lang.reflect.Field;
 
-import org.litespring.beans.factory.BeanCreationException;
-import org.litespring.beans.factory.config.AutowireCapableBeanFactory;
-import org.litespring.beans.factory.config.DependencyDescriptor;
-import org.litespring.util.ReflectionUtils;
+import com.learn.spring.beans.factory.BeanCreationException;
+import com.learn.spring.beans.factory.config.AutowireCapableBeanFactory;
+import com.learn.spring.beans.factory.config.DependencyDescriptor;
+import com.learn.spring.util.ReflectionUtils;
 
 public class AutowiredFieldElement extends InjectionElement {
 	boolean required;

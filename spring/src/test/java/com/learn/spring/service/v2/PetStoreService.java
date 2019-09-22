@@ -1,11 +1,11 @@
-package org.litespring.service.v2;
+package com.learn.spring.service.v2;
 
-import org.litespring.dao.v2.AccountDao;
-import org.litespring.dao.v2.ItemDao;
+import com.learn.spring.dao.v2.ItemDao;
+import com.learn.spring.dao.v2.AccountDao;
 
 public class PetStoreService {
 	private AccountDao accountDao;
-	private ItemDao  itemDao;
+	private ItemDao itemDao;
 	private String owner;
 	private int version;
 	

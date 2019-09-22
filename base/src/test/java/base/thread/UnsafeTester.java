@@ -1,5 +1,7 @@
 package base.thread;
 
+import com.learn.base.java.concurrent.thread.UnsafeTest;
+import com.learn.base.java.concurrent.thread.UserTestBean;
 import org.junit.Assert;
 import org.junit.Test;
 

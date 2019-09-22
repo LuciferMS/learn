@@ -1,4 +1,4 @@
-package algorithm.leetcode;
+package com.learn.base.algorithm.leetcode;
 
 /**
  * Definition for singly-linked list.

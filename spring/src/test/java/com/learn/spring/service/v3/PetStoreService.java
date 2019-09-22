@@ -1,7 +1,7 @@
-package org.litespring.service.v3;
+package com.learn.spring.service.v3;
 
-import org.litespring.dao.v3.AccountDao;
-import org.litespring.dao.v3.ItemDao;
+import com.learn.spring.dao.v3.AccountDao;
+import com.learn.spring.dao.v3.ItemDao;
 
 public class PetStoreService {
 	

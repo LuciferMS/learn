@@ -1,4 +1,4 @@
-package com.shengsiyuan.netty.handler2;
+package com.learn.netty.handler2;
 
 
 import io.netty.channel.ChannelInitializer;

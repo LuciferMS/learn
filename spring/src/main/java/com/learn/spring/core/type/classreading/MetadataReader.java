@@ -1,9 +1,9 @@
-package org.litespring.core.type.classreading;
+package com.learn.spring.core.type.classreading;
 
 
-import org.litespring.core.type.AnnotationMetadata;
-import org.litespring.core.type.ClassMetadata;
-import org.litespring.core.io.Resource;
+import com.learn.spring.core.io.Resource;
+import com.learn.spring.core.type.AnnotationMetadata;
+import com.learn.spring.core.type.ClassMetadata;
 
 /**
  * Simple facade for accessing class metadata,

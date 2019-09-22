@@ -1,4 +1,4 @@
-package pattern.proxy;
+package com.learn.base.pattern.proxy;
 
 public interface ISkillAction {
 

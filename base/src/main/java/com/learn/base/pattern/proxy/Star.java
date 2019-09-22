@@ -1,6 +1,4 @@
-package pattern.proxy;
-
-import pattern.proxy.ISkillAction;
+package com.learn.base.pattern.proxy;
 
 /**
  * @program: learn

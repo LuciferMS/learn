@@ -1,6 +1,4 @@
-package pattern.singleton.lazy;
-
-import org.omg.PortableInterceptor.INACTIVE;
+package com.learn.base.pattern.singleton.lazy;
 
 /**
  * @program: learn

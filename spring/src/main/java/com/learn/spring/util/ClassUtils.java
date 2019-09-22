@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.litespring.util;
+package com.learn.spring.util;
 
 import java.beans.Introspector;
 import java.lang.reflect.Array;
@@ -27,7 +27,6 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
@@ -456,7 +455,7 @@ public abstract class ClassUtils {
 	 * property format. Strips the outer class name in case of an inner class.
 	 * @param clazz the class
 	 * @return the short name rendered in a standard JavaBeans property format
-	 * @see java.beans.Introspector#decapitalize(String)
+	 * @see Introspector#decapitalize(String)
 	 */
 	public static String getShortNameAsProperty(Class<?> clazz) {
 		String shortName = getShortName(clazz);
@@ -1130,7 +1129,7 @@ public abstract class ClassUtils {
 	 * @param interfaces the interfaces to merge
 	 * @param classLoader the ClassLoader to create the composite Class in
 	 * @return the merged interface as Class
-	 * @see java.lang.reflect.Proxy#getProxyClass
+	 * @see Proxy#getProxyClass
 	 */
 	public static Class<?> createCompositeInterface(Class<?>[] interfaces, ClassLoader classLoader) {
 		

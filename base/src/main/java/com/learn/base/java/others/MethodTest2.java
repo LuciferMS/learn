@@ -1,3 +1,5 @@
+package com.learn.base.java.others;
+
 /**
  * @program: learn
  * @description:
@@ -5,4 +7,5 @@
  * @create: 2019-08-15 23:30
  **/
 public class MethodTest2 {
+
 }

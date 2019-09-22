@@ -1,4 +1,4 @@
-package algorithm.course.advanced8;
+package com.learn.base.algorithm.course.advanced8;
 
 import java.util.Arrays;
 import java.util.HashSet;

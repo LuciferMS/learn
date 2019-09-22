@@ -1,4 +1,4 @@
-package com.shengsiyuan.netty.handler;
+package com.learn.netty.handler;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;

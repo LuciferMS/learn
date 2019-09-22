@@ -5,7 +5,7 @@
            http://www.springframework.org/schema/beans/spring-beans.xsd">
   
   <bean id="petStore"
-        class="org.litespring.service.v2.PetStoreService" >
+        class="com.learn.spring.service.v2.PetStoreService" >
    
   	<property name="accountDao" ref="accountDao"/>
     <property name="itemDao" ref="itemDao"/>
@@ -14,10 +14,10 @@
     
   </bean> 
   
- <bean id="accountDao"  class="org.litespring.dao.v2.AccountDao">   
+ <bean id="accountDao"  class="com.learn.spring.dao.v2.AccountDao">
   </bean>
 
-  <bean id="itemDao" class="org.litespring.dao.v2.ItemDao">    
+  <bean id="itemDao" class="com.learn.spring.dao.v2.ItemDao">
   </bean>
 
 </beans>

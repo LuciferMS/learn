@@ -1,8 +1,8 @@
-package pattern.proxy.dynamicProxy;
+package com.learn.base.pattern.proxy.dynamicProxy;
 
-import pattern.proxy.ILiveAction;
-import pattern.proxy.ISkillAction;
-import pattern.proxy.Star;
+import com.learn.base.pattern.proxy.ILiveAction;
+import com.learn.base.pattern.proxy.ISkillAction;
+import com.learn.base.pattern.proxy.Star;
 
 import java.lang.reflect.Proxy;
 
@@ -18,6 +18,7 @@ public class DynamicProxyTest {
     }
 
     public static void useDynamicProxy(){
+        //System.setProperty("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
         Star star = new Star();
         DynamicProxyHandler dynamicProxyHandler = new DynamicProxyHandler(star);
         /**

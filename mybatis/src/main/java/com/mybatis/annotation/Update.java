@@ -1,3 +1,5 @@
+package com.mybatis.annotation;
+
 /**
  * @program: learn
  * @description: Updatae注解

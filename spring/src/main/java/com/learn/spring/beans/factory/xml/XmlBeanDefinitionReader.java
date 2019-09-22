@@ -1,27 +1,31 @@
-package org.litespring.beans.factory.xml;
+package com.learn.spring.beans.factory.xml;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Iterator;
 
+import com.learn.spring.aop.config.ConfigBeanDefinitionParser;
+import com.learn.spring.beans.BeanDefinition;
+import com.learn.spring.beans.ConstructorArgument;
+import com.learn.spring.beans.PropertyValue;
+import com.learn.spring.beans.factory.BeanDefinitionStoreException;
+import com.learn.spring.beans.factory.config.RuntimeBeanReference;
+import com.learn.spring.beans.factory.config.TypedStringValue;
+import com.learn.spring.beans.factory.support.BeanDefinitionRegistry;
+import com.learn.spring.beans.factory.support.GenericBeanDefinition;
+import com.learn.spring.core.io.Resource;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.dom4j.Document;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
-import org.litespring.aop.config.ConfigBeanDefinitionParser;
-import org.litespring.beans.BeanDefinition;
-import org.litespring.beans.ConstructorArgument;
-import org.litespring.beans.PropertyValue;
-import org.litespring.beans.factory.BeanDefinitionStoreException;
-import org.litespring.beans.factory.config.RuntimeBeanReference;
-import org.litespring.beans.factory.config.TypedStringValue;
-import org.litespring.beans.factory.support.BeanDefinitionRegistry;
-import org.litespring.beans.factory.support.GenericBeanDefinition;
-import org.litespring.context.annotation.ClassPathBeanDefinitionScanner;
-import org.litespring.core.io.Resource;
-import org.litespring.util.StringUtils;
+import com.learn.spring.context.annotation.ClassPathBeanDefinitionScanner;
+import com.learn.spring.util.StringUtils;
 
+/**
+ * 提取xml配置文件信息
+ * @author Elliot
+ */
 public class XmlBeanDefinitionReader {
 	
 	public static final String ID_ATTRIBUTE = "id";	
@@ -63,21 +67,33 @@ public class XmlBeanDefinitionReader {
 			is = resource.getInputStream();
 			SAXReader reader = new SAXReader();
 			Document doc = reader.read(is);
-			
-			Element root = doc.getRootElement(); //<beans>
+            /**
+             * 获取根节点
+             */
+			Element root = doc.getRootElement();
 			Iterator<Element> iter = root.elementIterator();
 			while(iter.hasNext()){
 				Element ele = (Element)iter.next();
 				String namespaceUri = ele.getNamespaceURI();
+                /**
+                 * 遍历节点进行解析
+                 */
 				if(this.isDefaultNamespace(namespaceUri)){
-					parseDefaultElement(ele); //普通的bean
+                    /**
+                     * bean节点
+                     */
+					parseDefaultElement(ele);
 				} else if(this.isContextNamespace(namespaceUri)){
-					parseComponentElement(ele); //例如<context:component-scan>
+                    /**
+                     * component-scan
+                     */
+					parseComponentElement(ele);
 				}  else if(this.isAOPNamespace(namespaceUri)){
-					parseAOPElement(ele);  //例如 <aop:config>
+                    /**
+                     * aop
+                     */
+					parseAOPElement(ele);
 				}
-				
-				
 			}
 		} catch (Exception e) {		
 			throw new BeanDefinitionStoreException("IOException parsing XML document from " + resource.getDescription(),e);
@@ -92,17 +108,31 @@ public class XmlBeanDefinitionReader {
 		}
 		
 	}
-	
+
+    /**
+     * component-scan解析
+     * @param ele
+     */
 	private void parseComponentElement(Element ele) {
 		String basePackages = ele.attributeValue(BASE_PACKAGE_ATTRIBUTE);
 		ClassPathBeanDefinitionScanner scanner = new ClassPathBeanDefinitionScanner(registry);
 		scanner.doScan(basePackages);		
 		
 	}
+
+    /**
+     * 解析aop
+     * @param ele
+     */
 	private void parseAOPElement(Element ele){
 		ConfigBeanDefinitionParser parser = new ConfigBeanDefinitionParser();
 		parser.parse(ele, this.registry);
 	}
+
+    /**
+     * bean节点解析
+     * @param ele
+     */
 	private void parseDefaultElement(Element ele) {
 		String id = ele.attributeValue(ID_ATTRIBUTE);
 		String beanClassName = ele.attributeValue(CLASS_ATTRIBUTE);
@@ -182,7 +212,7 @@ public class XmlBeanDefinitionReader {
 			if (!StringUtils.hasText(refName)) {
 				logger.error(elementName + " contains empty 'ref' attribute");
 			}
-			RuntimeBeanReference ref = new RuntimeBeanReference(refName);			
+			RuntimeBeanReference ref = new RuntimeBeanReference(refName);
 			return ref;
 		}else if (hasValueAttribute) {
 			TypedStringValue valueHolder = new TypedStringValue(ele.attributeValue(VALUE_ATTRIBUTE));

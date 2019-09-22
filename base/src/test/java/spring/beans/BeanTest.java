@@ -2,7 +2,7 @@ package spring.beans;
 
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import spring.SimpleBean;
+import com.learn.base.spring.SimpleBean;
 
 /**
  * @program: learn

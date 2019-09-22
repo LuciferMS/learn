@@ -1,4 +1,4 @@
-package org.litespring.util;
+package com.learn.spring.util;
 
 public abstract class Assert {
 	public static void notNull(Object object, String message) {

@@ -1,4 +1,4 @@
-package org.litespring.core.type.classreading;
+package com.learn.spring.core.type.classreading;
 
 
 
@@ -6,9 +6,9 @@ import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-import org.litespring.core.io.Resource;
-import org.litespring.core.type.AnnotationMetadata;
-import org.litespring.core.type.ClassMetadata;
+import com.learn.spring.core.io.Resource;
+import com.learn.spring.core.type.AnnotationMetadata;
+import com.learn.spring.core.type.ClassMetadata;
 import org.springframework.asm.ClassReader;
 
 

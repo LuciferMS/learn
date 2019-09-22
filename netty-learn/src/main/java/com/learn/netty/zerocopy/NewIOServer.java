@@ -1,4 +1,4 @@
-package com.shensiyuan.zerocopy;
+package com.learn.netty.zerocopy;
 
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
@@ -6,6 +6,9 @@ import java.nio.ByteBuffer;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 
+/**
+ * @author Administrator
+ */
 public class NewIOServer {
 
     public static void main(String[] args) throws Exception{

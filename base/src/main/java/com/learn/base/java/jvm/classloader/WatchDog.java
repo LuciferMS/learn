@@ -1,4 +1,4 @@
-package com.learn.base.jvm.classloader;
+package com.learn.base.java.jvm.classloader;
 
 import java.io.File;
 import java.lang.reflect.Method;
@@ -37,7 +37,7 @@ public class WatchDog implements Runnable{
     public void loadMyClass(){
         try {
             MyClassLoader customClassLoader = new MyClassLoader();
-            Class<?> cls = customClassLoader.loadClass("com.learn.base.jvm.classloader.TestClass",false);
+            Class<?> cls = customClassLoader.loadClass("com.learn.base.java.jvm.classloader.TestClass",false);
             Object test = cls.newInstance();
             Method method = cls.getMethod("test");
             method.invoke(test);

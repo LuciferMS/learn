@@ -1,3 +1,5 @@
+package com.mybatis;
+
 /**
  * @program: learn
  * @description: mybatis启动类

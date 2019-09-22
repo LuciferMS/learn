@@ -1,8 +1,8 @@
-package org.litespring.core.type;
+package com.learn.spring.core.type;
 
 import java.util.Set;
 
-import org.litespring.core.annotation.AnnotationAttributes;
+import com.learn.spring.core.annotation.AnnotationAttributes;
 
 public interface AnnotationMetadata extends ClassMetadata{
 	

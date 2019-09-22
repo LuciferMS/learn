@@ -1,4 +1,4 @@
-package algorithm.course.advanced3;
+package com.learn.base.algorithm.course.advanced3;
 
 public class Code_01_MorrisTraversal {
 
