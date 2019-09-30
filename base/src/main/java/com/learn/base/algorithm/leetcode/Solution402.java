@@ -14,7 +14,6 @@ public class Solution402 {
             return null;
         }
         Stack<Integer> nums = new Stack<>();
-
         return null;
     }
 }
