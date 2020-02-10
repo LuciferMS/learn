@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/learn.iml" filepath="$PROJECT_DIR$/.idea/learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis/mybatis.iml" filepath="$PROJECT_DIR$/mybatis/mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/netty-learn/netty-learn.iml" filepath="$PROJECT_DIR$/netty-learn/netty-learn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scala-learn/scala-learn.iml" filepath="$PROJECT_DIR$/scala-learn/scala-learn.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring/spring.iml" filepath="$PROJECT_DIR$/spring/spring.iml" />
     </modules>
   </component>
