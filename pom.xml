@@ -35,6 +35,7 @@
         <module>spring</module>
         <module>netty-learn</module>
         <module>web-server</module>
+        <module>tool</module>
     </modules>
 
     <dependencies>
