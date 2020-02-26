@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98d194da-351c-4c8e-aa91-64ae1fffa864" name="Default" comment="单例模式懒汉式&#10;spring依赖">
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution77.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/recursive/Solution401.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution79.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -44,16 +43,16 @@
     <session id="374892279">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="16" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.24" value="6" />
-          <entry key="project.open.time.25" value="4" />
+          <entry key="project.open.time.25" value="5" />
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="16" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,7 +60,7 @@
           <entry key="gitignore" value="1" />
           <entry key="gitingroe" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="42" />
+          <entry key="java" value="43" />
           <entry key="md" value="2" />
           <entry key="scala" value="1" />
           <entry key="txt" value="1" />
@@ -71,7 +70,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="42" />
+          <entry key="JAVA" value="43" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Scala" value="1" />
@@ -82,14 +81,14 @@
         <counts>
           <entry key="ft" value="28" />
           <entry key="gitingroe" value="22" />
-          <entry key="java" value="4655" />
+          <entry key="java" value="5850" />
           <entry key="md" value="441" />
           <entry key="scala" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4655" />
+          <entry key="JAVA" value="5850" />
           <entry key="Markdown" value="441" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="Scala" value="18" />
@@ -103,18 +102,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/java/collection/ArrayDequeLearn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tool/src/main/java/com/learn/tool/print/package-info.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -139,7 +126,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/recursive/Solution401.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="285">
               <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -148,15 +135,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution77.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="931">
-              <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+            <state relative-caret-position="481">
+              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#291#306#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution79.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="523">
+              <caret line="47" column="56" lean-forward="true" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -164,8 +159,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tool/src/main/java/com/learn/tool/print/Console.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+            <state relative-caret-position="513">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -261,7 +256,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/offer/UsingLRU.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/offer/Tx2.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/offer/Tx4.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/offer/Tx3.java" />
@@ -312,6 +306,7 @@
         <option value="$PROJECT_DIR$/日积月累.md" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/recursive/Solution401.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution77.java" />
+        <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution79.java" />
       </list>
     </option>
   </component>
@@ -328,10 +323,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="52" />
-    <option name="y" value="47" />
+    <option name="x" value="-37" />
+    <option name="y" value="82" />
     <option name="width" value="1650" />
-    <option name="height" value="833" />
+    <option name="height" value="834" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -342,59 +337,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="learn" type="58d84e3e:PackageViewProjectNode" />
-              <item name="netty-learn" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="learn" type="58d84e3e:PackageViewProjectNode" />
-              <item name="netty-learn" type="616d4139:PackageViewModuleNode" />
-              <item name="com" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="base" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-            <path>
-              <item name="learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="base" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="base" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="base" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="base" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="com.learn.base.java.collection" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -476,6 +418,59 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="learn" type="58d84e3e:PackageViewProjectNode" />
+              <item name="netty-learn" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="learn" type="58d84e3e:PackageViewProjectNode" />
+              <item name="netty-learn" type="616d4139:PackageViewModuleNode" />
+              <item name="com" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="base" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+            <path>
+              <item name="learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="base" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="base" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="base" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="learn" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="base" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="main" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="java" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="com.learn.base.java.collection" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -483,7 +478,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/ideaPro/learn/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution46.java&#10;Thread&#9;FILE&#9;jar://E:/java/jdk/src.zip!/java/lang/Thread.java&#10;Deque&#9;PSI&#9;JAVA://java.util.Deque&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList&#10;Vector&#9;PSI&#9;JAVA://java.util.Vector&#10;ThreadPo&#9;PSI&#9;JAVA://com.learn.base.java.concurrent.executor.ThreadPoolLearn&#10;AtomicIn&#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicInteger&#10;Array&#9;FILE&#9;jar://E:/java/jdk/src.zip!/java/util/Arrays.java&#10;ThreadLoca&#9;PSI&#9;JAVA://java.lang.ThreadLocal" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582643316662" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582698012185" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/netty-learn/src/main/java/com/learn/netty" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../hutool" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -532,7 +527,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution77">
+  <component name="RunManager" selected="Application.Solution79">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -595,13 +590,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadPrint3" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learn.base.java.concurrent.thread.ThreadPrint3" />
+    <configuration name="Solution79" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.base.algorithm.leetcode.backtracking.Solution79" />
       <module name="base" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.learn.base.java.concurrent.thread.*" />
+          <option name="PATTERN" value="com.learn.base.algorithm.leetcode.backtracking.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -609,13 +604,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VectorLearn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learn.base.java.collection.VectorLearn" />
+    <configuration name="ThreadPrint3" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.base.java.concurrent.thread.ThreadPrint3" />
       <module name="base" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.learn.base.java.collection.*" />
+          <option name="PATTERN" value="com.learn.base.java.concurrent.thread.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -654,19 +649,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ThreadPrint3" />
-      <item itemvalue="Application.VectorLearn" />
       <item itemvalue="Application.ArraySize" />
       <item itemvalue="Application.Solution46" />
       <item itemvalue="Application.Solution47" />
       <item itemvalue="Application.Solution77" />
+      <item itemvalue="Application.Solution79" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution79" />
         <item itemvalue="Application.Solution77" />
         <item itemvalue="Application.Solution47" />
         <item itemvalue="Application.Solution46" />
         <item itemvalue="Application.ArraySize" />
-        <item itemvalue="Application.VectorLearn" />
       </list>
     </recent_temporary>
   </component>
@@ -799,7 +794,8 @@
       <workItem from="1582125806549" duration="1693000" />
       <workItem from="1582430223764" duration="1046000" />
       <workItem from="1582468714868" duration="18000" />
-      <workItem from="1582635190296" duration="6290000" />
+      <workItem from="1582635190296" duration="6987000" />
+      <workItem from="1582685852703" duration="3500000" />
     </task>
     <task id="LOCAL-00001" summary="修改了一下redis.md，格式上的">
       <created>1556969954203</created>
@@ -858,7 +854,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="711846000" />
+    <option name="totallyTimeSpent" value="716043000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -871,8 +867,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48866856" visible="true" weight="0.3585791" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48866856" weight="0.429477" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -885,14 +882,14 @@
       <window_info anchor="bottom" id="Spring" order="3" weight="0.3253521" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3197183" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49396783" visible="true" weight="0.38526914" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49396783" visible="true" weight="0.2917847" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.41501418" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32957748" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.50652176" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5073727" side_tool="true" weight="0.40704226" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49262735" weight="0.29787233" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49262735" weight="0.39252338" />
       <window_info anchor="right" id="Mybatis datasource" order="0" side_tool="true" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -908,7 +905,7 @@
       <window_info anchor="right" id="ASM" order="12" weight="0.32935917" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48866856" visible="true" weight="0.35895404" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48866856" visible="true" weight="0.429477" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -921,14 +918,14 @@
       <window_info anchor="bottom" id="Spring" order="3" weight="0.3253521" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3197183" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49396783" weight="0.14534883" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49396783" weight="0.38526914" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.41501418" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32957748" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.50652176" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5073727" side_tool="true" weight="0.40704226" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49262735" weight="0.29787233" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49262735" visible="true" weight="0.39252338" />
       <window_info anchor="right" id="Mybatis datasource" order="0" side_tool="true" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1011,13 +1008,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/java/jdk/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="396" column="26" selection-start-line="396" selection-start-column="26" selection-end-line="396" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/java/jdk/src.zip!/java/lang/Boolean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5589">
@@ -1297,18 +1287,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4028">
           <caret line="252" column="5" selection-start-line="252" selection-start-column="5" selection-end-line="252" selection-end-column="5" />
-          <folding>
-            <element signature="e#5079#5080#0" expanded="true" />
-            <element signature="e#5144#5145#0" expanded="true" />
-            <element signature="e#6627#6628#0" expanded="true" />
-            <element signature="e#6668#6669#0" expanded="true" />
-            <element signature="e#6929#6930#0" expanded="true" />
-            <element signature="e#6974#6975#0" expanded="true" />
-            <element signature="e#14090#14091#0" expanded="true" />
-            <element signature="e#14125#14126#0" expanded="true" />
-            <element signature="e#14559#14560#0" expanded="true" />
-            <element signature="e#14595#14596#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1336,6 +1314,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/recursive/Solution401.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/src/main/java/com/learn/tool/print/Console.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
@@ -1379,31 +1374,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/recursive/Solution401.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/src/main/java/com/learn/tool/print/Console.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution77.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        <state relative-caret-position="481">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#291#306#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution79.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="47" column="56" lean-forward="true" selection-start-line="47" selection-start-column="56" selection-end-line="47" selection-end-column="56" />
         </state>
       </provider>
     </entry>
