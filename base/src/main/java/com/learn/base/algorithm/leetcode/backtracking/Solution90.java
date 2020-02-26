@@ -25,12 +25,9 @@ public class Solution90 {
     }
 
     private void helper(int index, Deque<Integer> deque){
-        if (index > nums.length){
-            result.add(new ArrayList<>(deque));
-            return ;
-        }
         result.add(new ArrayList<>(deque));
         for(int i = index; i < nums.length; i++){
+            if(i > index && nums[i] == nums[i - 1]) continue;
             deque.add(nums[i]);
             helper(i + 1 , deque);
             deque.removeLast();
