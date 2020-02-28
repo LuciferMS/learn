@@ -64,4 +64,10 @@ public class StringTest {
         String s = "1288888";
         System.out.println(s.indexOf('8'));
     }
+
+    @Test
+    public void subStringTest(){
+        String s = "25525511125";
+        System.out.println(s.substring(0, 1));
+    }
 }
