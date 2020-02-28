@@ -27,8 +27,9 @@ public class Solution93 {
     private void helper(int index, Deque<String> deque){
         if((s.length() - 1 - index) > (4 - deque.size()) * 3) return ;
         if(!deque.isEmpty()){
-            if(deque.getLast().length() != 1 && deque.getLast().startsWith("0")) return ;
-            if(Integer.valueOf(deque.getLast()) > 255) return ;
+            String last = deque.getLast();
+            if(last.length() != 1 && last.startsWith("0")) return ;
+            if(Integer.valueOf(last) > 255) return ;
         }
         if (deque.size() == 4 && index == s.length()){
             StringBuilder stringBuilder = new StringBuilder();
@@ -36,7 +37,6 @@ public class Solution93 {
                 stringBuilder.append(s);
                 stringBuilder.append(".");
             }
-
             result.add(stringBuilder.subSequence(0, stringBuilder.lastIndexOf(".")).toString());
         }
         int end = index + 3 >= s.length() ? s.length() : index + 3;

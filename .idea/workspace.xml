@@ -7,7 +7,6 @@
     <list default="true" id="98d194da-351c-4c8e-aa91-64ae1fffa864" name="Default" comment="单例模式懒汉式&#10;spring依赖">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution93.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution93.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/src/test/java/base/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/test/java/base/StringTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -83,14 +82,14 @@
         <counts>
           <entry key="ft" value="28" />
           <entry key="gitingroe" value="22" />
-          <entry key="java" value="7869" />
+          <entry key="java" value="7913" />
           <entry key="md" value="522" />
           <entry key="scala" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7869" />
+          <entry key="JAVA" value="7913" />
           <entry key="Markdown" value="522" />
           <entry key="PLAIN_TEXT" value="22" />
           <entry key="Scala" value="18" />
@@ -108,7 +107,7 @@
         <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution93.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="171">
-              <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+              <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -397,7 +396,7 @@
     <property name="SearchEverywhereHistoryKey" value="Collectio&#9;PSI&#9;JAVA://java.util.Collection&#10;URL&#9;PSI&#9;JAVA://java.net.URL&#10;ClassLo&#9;PSI&#9;JAVA://java.lang.ClassLoader&#10;Thread&#9;FILE&#9;jar://E:/java/jdk/src.zip!/java/lang/Thread.java&#10;Deque&#9;PSI&#9;JAVA://java.util.Deque&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList&#10;Vector&#9;PSI&#9;JAVA://java.util.Vector&#10;ThreadPo&#9;PSI&#9;JAVA://com.learn.base.java.concurrent.executor.ThreadPoolLearn&#10;AtomicIn&#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicInteger&#10;Array&#9;FILE&#9;jar://E:/java/jdk/src.zip!/java/util/Arrays.java&#10;ThreadLoca&#9;PSI&#9;JAVA://java.lang.ThreadLocal" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582884558323" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582885269833" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/netty-learn/src/main/java/com/learn/netty" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../hutool" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -719,7 +718,7 @@
       <workItem from="1582635190296" duration="6987000" />
       <workItem from="1582685852703" duration="16274000" />
       <workItem from="1582729961449" duration="1863000" />
-      <workItem from="1582880911025" duration="3261000" />
+      <workItem from="1582880911025" duration="3971000" />
     </task>
     <task id="LOCAL-00001" summary="修改了一下redis.md，格式上的">
       <created>1556969954203</created>
@@ -778,7 +777,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="733941000" />
+    <option name="totallyTimeSpent" value="734651000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -790,7 +789,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48866856" visible="true" weight="0.28820375" />
@@ -806,14 +805,14 @@
       <window_info anchor="bottom" id="Spring" order="3" weight="0.3253521" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3197183" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49396783" visible="true" weight="0.3654391" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49396783" weight="0.3654391" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.41501418" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32957748" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.50652176" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5073727" side_tool="true" weight="0.40704226" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49262735" weight="0.39235127" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="13" sideWeight="0.49262735" visible="true" weight="0.39235127" />
       <window_info anchor="right" id="Mybatis datasource" order="0" side_tool="true" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1269,7 +1268,7 @@
     <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution93.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+          <caret line="42" column="47" lean-forward="true" selection-start-line="42" selection-start-column="47" selection-end-line="42" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
