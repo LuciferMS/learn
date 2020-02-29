@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98d194da-351c-4c8e-aa91-64ae1fffa864" name="Default" comment="单例模式懒汉式&#10;spring依赖">
+      <change afterPath="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution211.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/src/test/java/base/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/test/java/base/StringTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,22 +47,22 @@
           <entry key="project.closed" value="19" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.24" value="6" />
+          <entry key="project.open.time.24" value="7" />
           <entry key="project.open.time.25" value="5" />
           <entry key="project.open.time.27" value="2" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="gitingroe" value="1" />
+          <entry key="gitingroe" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="73" />
+          <entry key="java" value="75" />
           <entry key="md" value="3" />
           <entry key="scala" value="1" />
           <entry key="txt" value="1" />
@@ -70,9 +72,9 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="73" />
+          <entry key="JAVA" value="75" />
           <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="Scala" value="1" />
           <entry key="XML" value="2" />
         </counts>
@@ -80,17 +82,17 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ft" value="28" />
-          <entry key="gitingroe" value="22" />
-          <entry key="java" value="8724" />
+          <entry key="gitingroe" value="25" />
+          <entry key="java" value="10849" />
           <entry key="md" value="522" />
           <entry key="scala" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8724" />
+          <entry key="JAVA" value="10849" />
           <entry key="Markdown" value="522" />
-          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="PLAIN_TEXT" value="25" />
           <entry key="Scala" value="18" />
           <entry key="VTL" value="28" />
         </counts>
@@ -101,7 +103,7 @@
     <favorites_list name="learn" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution93.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -115,37 +117,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://E:/java/jdk/src.zip!/java/lang/Integer.java">
+        <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution216.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="569" lean-forward="true" selection-start-line="569" selection-end-line="569" />
+            <state relative-caret-position="-88">
+              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding>
-                <element signature="e#35161#35162#0" expanded="true" />
-                <element signature="e#35199#35200#0" expanded="true" />
-                <element signature="e#46394#46395#0" expanded="true" />
-                <element signature="e#46458#46459#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://E:/java/jdk/src.zip!/java/lang/Character.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="149" column="28" selection-start-line="149" selection-start-column="28" selection-end-line="149" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution216.java">
+        <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution211.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            <state relative-caret-position="-171">
+              <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#294#309#0" expanded="true" />
+                <element signature="e#325#326#0" expanded="true" />
+                <element signature="e#358#359#0" expanded="true" />
+                <element signature="e#713#714#0" expanded="true" />
+                <element signature="e#759#760#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -194,7 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/offer/Tx5.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/offer/Tx1.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/Solutionn455.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/Solution455.java" />
@@ -231,7 +222,6 @@
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/java/collection/ArrayDequeLearn.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/java/collection/ArraySize.java" />
         <option value="$PROJECT_DIR$/web-server/src/main/java/com/learn/webServer/Main.java" />
-        <option value="$PROJECT_DIR$/.gitingroe" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution46.java" />
         <option value="$PROJECT_DIR$/tool/src/main/java/com/learn/tool/print/package-info.java" />
         <option value="$PROJECT_DIR$/tool/src/test/java/com/learn/tool/test/print/ConsoleTester.java" />
@@ -242,9 +232,11 @@
         <option value="$PROJECT_DIR$/日积月累.md" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution90.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution47.java" />
-        <option value="$PROJECT_DIR$/base/src/test/java/base/StringTest.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution93.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution216.java" />
+        <option value="$PROJECT_DIR$/.gitingroe" />
+        <option value="$PROJECT_DIR$/base/src/test/java/base/StringTest.java" />
+        <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution211.java" />
       </list>
     </option>
   </component>
@@ -260,9 +252,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-237" />
-    <option name="y" value="83" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-53" />
+    <option name="y" value="27" />
     <option name="width" value="1933" />
     <option name="height" value="1050" />
   </component>
@@ -275,6 +267,76 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="backtracking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="learn" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -328,76 +390,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="recursive" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dynamicProxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learn" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -405,7 +397,7 @@
     <property name="SearchEverywhereHistoryKey" value="Collectio&#9;PSI&#9;JAVA://java.util.Collection&#10;URL&#9;PSI&#9;JAVA://java.net.URL&#10;ClassLo&#9;PSI&#9;JAVA://java.lang.ClassLoader&#10;Thread&#9;FILE&#9;jar://E:/java/jdk/src.zip!/java/lang/Thread.java&#10;Deque&#9;PSI&#9;JAVA://java.util.Deque&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList&#10;Vector&#9;PSI&#9;JAVA://java.util.Vector&#10;ThreadPo&#9;PSI&#9;JAVA://com.learn.base.java.concurrent.executor.ThreadPoolLearn&#10;AtomicIn&#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicInteger&#10;Array&#9;FILE&#9;jar://E:/java/jdk/src.zip!/java/util/Arrays.java&#10;ThreadLoca&#9;PSI&#9;JAVA://java.lang.ThreadLocal" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582905652222" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1582988904147" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/netty-learn/src/main/java/com/learn/netty" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../hutool" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -454,15 +446,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution216">
+  <component name="RunManager" selected="Application.Solution211">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution216" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learn.base.algorithm.leetcode.backtracking.Solution216" />
+    <configuration name="Solution211" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.base.algorithm.leetcode.backtracking.Solution211" />
       <module name="base" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -475,8 +467,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution46" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learn.base.algorithm.leetcode.backtracking.Solution46" />
+    <configuration name="Solution216" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.base.algorithm.leetcode.backtracking.Solution216" />
       <module name="base" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -579,19 +571,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ThreadPrint3" />
-      <item itemvalue="Application.Solution46" />
       <item itemvalue="Application.Solution47" />
       <item itemvalue="Application.Solution93" />
       <item itemvalue="JUnit.StringTest.subStringTest" />
       <item itemvalue="Application.Solution216" />
+      <item itemvalue="Application.Solution211" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution211" />
+        <item itemvalue="JUnit.StringTest.subStringTest" />
         <item itemvalue="Application.Solution216" />
         <item itemvalue="Application.Solution93" />
-        <item itemvalue="JUnit.StringTest.subStringTest" />
         <item itemvalue="Application.Solution47" />
-        <item itemvalue="Application.Solution46" />
       </list>
     </recent_temporary>
   </component>
@@ -728,6 +720,7 @@
       <workItem from="1582685852703" duration="16274000" />
       <workItem from="1582729961449" duration="1863000" />
       <workItem from="1582880911025" duration="12933000" />
+      <workItem from="1582974582999" duration="13852000" />
     </task>
     <task id="LOCAL-00001" summary="修改了一下redis.md，格式上的">
       <created>1556969954203</created>
@@ -754,18 +747,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IntegerTest_mutiTest - 2019.12.26 at 21h 38m 32s.xml">
-      <configuration name="IntegerTest.mutiTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IntegerTest_testGetChars - 2019.12.26 at 21h 38m 45s.xml">
-      <configuration name="IntegerTest.testGetChars" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IntegerTest_bitCountTest - 2019.12.26 at 23h 13m 11s.xml">
-      <configuration name="IntegerTest.bitCountTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="IntegerTest_bitCountTest - 2019.12.26 at 23h 23m 54s.xml">
-      <configuration name="IntegerTest.bitCountTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="IntegerTest_unsignedTest - 2019.12.27 at 13h 34m 10s.xml">
       <configuration name="IntegerTest.unsignedTest" configurationId="JUnit" />
     </history-entry>
@@ -784,9 +765,21 @@
     <history-entry file="StringTest_subStringTest - 2020.02.28 at 17h 52m 18s.xml">
       <configuration name="StringTest.subStringTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="StringTest_subStringTest - 2020.02.29 at 21h 10m 13s.xml">
+      <configuration name="StringTest.subStringTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringTest_subStringTest - 2020.02.29 at 21h 10m 37s.xml">
+      <configuration name="StringTest.subStringTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringTest_subStringTest - 2020.02.29 at 21h 11m 00s.xml">
+      <configuration name="StringTest.subStringTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="StringTest_subStringTest - 2020.02.29 at 21h 15m 36s.xml">
+      <configuration name="StringTest.subStringTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="743613000" />
+    <option name="totallyTimeSpent" value="757465000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -799,8 +792,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48866856" visible="true" weight="0.28820375" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48866856" visible="true" weight="0.29155496" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -813,8 +807,8 @@
       <window_info anchor="bottom" id="Spring" order="3" weight="0.3253521" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3197183" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49396783" weight="0.3654391" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.41359773" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49396783" visible="true" weight="0.26345608" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4124294" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32957748" />
@@ -836,7 +830,7 @@
       <window_info anchor="right" id="ASM" order="12" weight="0.32935917" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48866856" visible="true" weight="0.3632708" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48866856" visible="true" weight="0.29301074" />
       <window_info id="Image Layers" order="1" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -849,14 +843,14 @@
       <window_info anchor="bottom" id="Spring" order="3" weight="0.3253521" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3197183" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.49396783" weight="0.2917847" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.41501418" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.49396783" visible="true" weight="0.22457626" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.41359773" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32957748" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.50652176" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5073727" side_tool="true" weight="0.40704226" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49262735" visible="true" weight="0.39235127" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49262735" weight="0.39093485" />
       <window_info anchor="right" id="Mybatis datasource" order="0" side_tool="true" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -939,13 +933,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/netty-learn/src/main/java/com/learn/netty/bio/BioServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/java/jdk/src.zip!/java/io/Console.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
@@ -1023,13 +1010,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitingroe">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1137,27 +1117,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15561">
           <caret line="865" column="9" selection-start-line="865" selection-start-column="9" selection-end-line="865" selection-end-column="9" />
-          <folding>
-            <element signature="e#6283#6284#0" expanded="true" />
-            <element signature="e#6351#6352#0" expanded="true" />
-            <element signature="e#31368#31369#0" expanded="true" />
-            <element signature="e#31413#31414#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/日积月累.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
           <first_editor relative-caret-position="-540">
             <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="16" column="82" selection-start-line="16" selection-start-column="82" selection-end-line="16" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -1203,13 +1177,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/test/java/base/StringTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://E:/java/jdk/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="411">
@@ -1221,10 +1188,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="588" column="15" selection-start-line="588" selection-start-column="15" selection-end-line="588" selection-end-column="15" />
-          <folding>
-            <element signature="e#19175#19176#0" expanded="true" />
-            <element signature="e#19235#19236#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1239,10 +1202,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/pattern/proxy/dynamicProxy/DynamicProxyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/pattern/proxy/dynamicProxy/DynamicProxyHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/java/jdk/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10184">
+          <caret line="569" selection-start-line="569" selection-end-line="569" />
           <folding>
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
+            <element signature="e#35161#35162#0" expanded="true" />
+            <element signature="e#35199#35200#0" expanded="true" />
+            <element signature="e#46394#46395#0" expanded="true" />
+            <element signature="e#46458#46459#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitingroe">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution216.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/test/java/base/StringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="71" column="40" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/java/jdk/src.zip!/java/lang/Character.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="149" column="28" selection-start-line="149" selection-start-column="28" selection-end-line="149" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1256,53 +1273,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://E:/java/jdk/src.zip!/java/lang/Character.java">
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution211.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="149" column="28" selection-start-line="149" selection-start-column="28" selection-end-line="149" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/java/jdk/src.zip!/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="569" lean-forward="true" selection-start-line="569" selection-end-line="569" />
+        <state relative-caret-position="-171">
+          <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
           <folding>
-            <element signature="e#35161#35162#0" expanded="true" />
-            <element signature="e#35199#35200#0" expanded="true" />
-            <element signature="e#46394#46395#0" expanded="true" />
-            <element signature="e#46458#46459#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/pattern/proxy/dynamicProxy/DynamicProxyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/pattern/proxy/dynamicProxy/DynamicProxyHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/backtracking/Solution216.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="19" lean-forward="true" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#294#309#0" expanded="true" />
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#358#359#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
           </folding>
         </state>
       </provider>

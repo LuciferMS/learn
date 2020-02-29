@@ -69,5 +69,6 @@ public class StringTest {
     public void subStringTest(){
         String s = "25525511125";
         System.out.println(s.substring(0, 1));
+        System.out.println(s.substring(1));
     }
 }
