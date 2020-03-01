@@ -1,5 +1,7 @@
 package com.learn.base.algorithm.leetcode.backtracking;
 
+import java.util.List;
+
 /**
  * @program: learn
  * @description: 累加数
@@ -8,4 +10,13 @@ package com.learn.base.algorithm.leetcode.backtracking;
  **/
 public class Solution306 {
 
+    public boolean isAdditiveNumber(String num) {
+        if(num == null || num.length() == 0) return true;
+        return true;
+    }
+
+    private boolean helper(int index, String num, List<Integer> list){
+
+        return true;
+    }
 }
