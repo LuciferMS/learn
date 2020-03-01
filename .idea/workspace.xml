@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98d194da-351c-4c8e-aa91-64ae1fffa864" name="Default" comment="单例模式懒汉式&#10;spring依赖">
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/Solution1347.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/Solution1346.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,7 +61,7 @@
           <entry key="gitignore" value="1" />
           <entry key="gitingroe" value="2" />
           <entry key="iml" value="1" />
-          <entry key="java" value="86" />
+          <entry key="java" value="87" />
           <entry key="md" value="5" />
           <entry key="scala" value="1" />
           <entry key="txt" value="1" />
@@ -71,7 +71,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="86" />
+          <entry key="JAVA" value="87" />
           <entry key="Markdown" value="5" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="Scala" value="1" />
@@ -82,14 +82,14 @@
         <counts>
           <entry key="ft" value="28" />
           <entry key="gitingroe" value="25" />
-          <entry key="java" value="12127" />
+          <entry key="java" value="12639" />
           <entry key="md" value="588" />
           <entry key="scala" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12127" />
+          <entry key="JAVA" value="12639" />
           <entry key="Markdown" value="588" />
           <entry key="PLAIN_TEXT" value="25" />
           <entry key="Scala" value="18" />
@@ -103,11 +103,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/Solution1347.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="342">
               <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/Solution1346.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,7 +167,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/Solution29.java" />
         <option value="$PROJECT_DIR$/base/pom.xml" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/pattern/proxy/cglibProxy/SimpleClass.java" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/pattern/proxy/cglibProxy/asm/Demo.java" />
@@ -206,6 +217,7 @@
         <option value="$PROJECT_DIR$/tool/src/test/java/com/learn/tool/test/proxy/ProxyTester.java" />
         <option value="$PROJECT_DIR$/日积月累.md" />
         <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/Solution1347.java" />
+        <option value="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/Solution1346.java" />
       </list>
     </option>
   </component>
@@ -222,8 +234,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="116" />
-    <option name="y" value="6" />
+    <option name="x" value="-74" />
+    <option name="y" value="68" />
     <option name="width" value="1933" />
     <option name="height" value="1035" />
   </component>
@@ -435,7 +447,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://E:/ideaPro/learn/base/src/main/java/com/learn/base/pattern/proxy/dynamicProxy/DynamicProxyHandler.java&#10;Collectio&#9;PSI&#9;JAVA://java.util.Collection&#10;URL&#9;PSI&#9;JAVA://java.net.URL&#10;ClassLo&#9;PSI&#9;JAVA://java.lang.ClassLoader&#10;Thread&#9;FILE&#9;jar://E:/java/jdk/src.zip!/java/lang/Thread.java&#10;Deque&#9;PSI&#9;JAVA://java.util.Deque&#10;ArrayList&#9;PSI&#9;JAVA://java.util.ArrayList&#10;Vector&#9;PSI&#9;JAVA://java.util.Vector&#10;ThreadPo&#9;PSI&#9;JAVA://com.learn.base.java.concurrent.executor.ThreadPoolLearn&#10;AtomicIn&#9;PSI&#9;JAVA://java.util.concurrent.atomic.AtomicInteger&#10;Array&#9;FILE&#9;jar://E:/java/jdk/src.zip!/java/util/Arrays.java&#10;ThreadLoca&#9;PSI&#9;JAVA://java.lang.ThreadLocal" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583062993382" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583065661996" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/netty-learn/src/main/java/com/learn/netty" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../hutool" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -484,9 +496,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Solution1347">
+  <component name="RunManager" selected="Application.Solution1346">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Solution1346" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.learn.base.algorithm.leetcode.Solution1346" />
+      <module name="base" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.learn.base.algorithm.leetcode.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -507,20 +533,6 @@
     </configuration>
     <configuration name="Solution211" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.learn.base.algorithm.leetcode.backtracking.Solution211" />
-      <module name="base" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.learn.base.algorithm.leetcode.backtracking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution216" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.learn.base.algorithm.leetcode.backtracking.Solution216" />
       <module name="base" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -613,18 +625,18 @@
     <list>
       <item itemvalue="Application.ThreadPrint3" />
       <item itemvalue="JUnit.StringTest.subStringTest" />
-      <item itemvalue="Application.Solution216" />
       <item itemvalue="Application.Solution211" />
       <item itemvalue="JUnit.ProxyTester.proxyTest" />
       <item itemvalue="Application.Solution1347" />
+      <item itemvalue="Application.Solution1346" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution1346" />
         <item itemvalue="Application.Solution1347" />
         <item itemvalue="JUnit.ProxyTester.proxyTest" />
         <item itemvalue="Application.Solution211" />
         <item itemvalue="JUnit.StringTest.subStringTest" />
-        <item itemvalue="Application.Solution216" />
       </list>
     </recent_temporary>
   </component>
@@ -762,7 +774,7 @@
       <workItem from="1582729961449" duration="1863000" />
       <workItem from="1582880911025" duration="12933000" />
       <workItem from="1582974582999" duration="14766000" />
-      <workItem from="1582996835780" duration="9482000" />
+      <workItem from="1582996835780" duration="11224000" />
     </task>
     <task id="LOCAL-00001" summary="修改了一下redis.md，格式上的">
       <created>1556969954203</created>
@@ -821,7 +833,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="767861000" />
+    <option name="totallyTimeSpent" value="769603000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -833,7 +845,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="93" y="5" width="1546" height="828" extended-state="0" />
+    <frame x="-59" y="55" width="1546" height="828" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.48866856" visible="true" weight="0.29704303" />
@@ -856,7 +868,7 @@
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32957748" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.50652176" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5073727" side_tool="true" weight="0.40704226" />
-      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49262735" weight="0.40174672" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49262735" weight="0.40086207" />
       <window_info anchor="right" id="Mybatis datasource" order="0" side_tool="true" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -975,13 +987,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://E:/java/jdk/src.zip!/java/util/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-106">
-          <caret line="272" column="31" lean-forward="true" selection-start-line="272" selection-start-column="31" selection-end-line="272" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scala-learn/scala-learn.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1330,8 +1335,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/Solution1347.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="342">
           <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/Solution1346.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
