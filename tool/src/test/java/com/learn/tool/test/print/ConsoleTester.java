@@ -1,10 +1,7 @@
 package com.learn.tool.test.print;
 
-import com.learn.tool.print.Console;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @program: learn
