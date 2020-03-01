@@ -19,6 +19,7 @@ public class Solution1346 {
             num = arr[i] * 2;
             while (pointer < len && num > arr[pointer]) pointer++;
             if(pointer < len && pointer != i && num == arr[pointer]) return true;
+            else if(pointer == len) break;
         }
         return false;
     }
@@ -28,6 +29,6 @@ public class Solution1346 {
         System.out.println(solution1346.checkIfExist(new int[]{2, 3, 5, 10}));
         System.out.println(solution1346.checkIfExist(new int[]{3, 1, 7, 11}));
         System.out.println(solution1346.checkIfExist(new int[]{7, 1, 11, 14}));
-        System.out.println(solution1346.checkIfExist(new int[]{-2,0,10,-19,4,6,-8}));
+        System.out.println(solution1346.checkIfExist(new int[]{-2, 0, 10, -19, 4, 6, -8}));
     }
 }
