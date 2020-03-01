@@ -2,7 +2,7 @@ package com.learn.base.algorithm.leetcode;
 
 /**
  * @program: learn
- * @description: 制作字幕异味词的最小步骤数
+ * @description: 制作字母异位词的最小步骤数
  * @author: Elliot
  * @create: 2020-03-01 19:35
  **/
