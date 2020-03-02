@@ -1,6 +1,7 @@
 package base.Nums;
 
 import org.junit.Test;
+import org.omg.PortableInterceptor.INACTIVE;
 
 /**
  * @program: learn
@@ -60,5 +61,27 @@ public class IntegerTest {
         System.out.println(-10 >>> 1);
         System.out.println(-10 >> 1);
     }
+
+    @Test
+    public void parseInt(){
+        System.out.println(Integer.parseInt("0", 10));
+        System.out.println(Integer.parseInt("473", 10));
+        System.out.println(Integer.parseInt("+42", 10));
+        System.out.println(Integer.parseInt("-30", 10));
+        System.out.println(Integer.parseInt("-FF", 16));
+        System.out.println(Integer.parseInt("1100110", 2));
+        System.out.println(Integer.parseInt("Kona", 27));
+    }
+
+    @Test
+    public void lessThanTest(){
+        char c = 'a';
+        if(c >>> 8 == 0){
+            System.out.println("是个字符...");
+        }else{
+            System.out.println("不会走到这里的。。");
+        }
+    }
+
 
 }
