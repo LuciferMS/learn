@@ -2,6 +2,10 @@ package base.Nums;
 
 import org.junit.Test;
 import org.omg.PortableInterceptor.INACTIVE;
+import sun.misc.VM;
+
+import java.lang.reflect.Field;
+import java.util.Properties;
 
 /**
  * @program: learn
@@ -91,6 +95,28 @@ public class IntegerTest {
         Integer i4 = Integer.valueOf(1);
         System.out.println(i1 == i2);
         System.out.println(i3 == i4);
+    }
+
+    @Test
+    public void integerCacheTest(){
+        Properties properties = new Properties();
+        Integer i1 = Integer.valueOf(300);
+        Integer i2 = Integer.valueOf(300);
+        System.out.println(i1 == i2);
+    }
+
+    @Test
+    public void cacheTest() throws NoSuchFieldException, IllegalAccessException {
+        Class<?> clazz = Integer.class.getDeclaredClasses()[0];
+        Field field = clazz.getDeclaredField("cache");
+        field.setAccessible(true);
+        Integer[] cache = (Integer[])field.get(clazz);
+        cache[132] = cache[133];
+        int a = 2;
+        int b = a + a;
+        System.out.printf("%d+%d=%d", a, a, b);
+        System.out.println();
+        System.out.println(a + "+" + a + "=" + b);
     }
 
 }
