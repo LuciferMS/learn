@@ -1,8 +1,5 @@
 package com.learn.base.algorithm.leetcode;
 
-import javax.jnlp.DownloadService;
-import javax.xml.transform.stax.StAXSource;
-
 /**
  * @program: learn
  * @description: leetcode376 贪心算法2摇摆序列

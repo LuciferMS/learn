@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="base" />
-        <module name="mybatis" />
-        <module name="netty-learn" />
         <module name="spring" />
-        <module name="tool" />
+        <module name="thrift-learn" />
+        <module name="mybatis" />
         <module name="web-server" />
+        <module name="tool" />
+        <module name="base" />
+        <module name="netty-learn" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +21,7 @@
       <module name="mybatis" target="1.8" />
       <module name="netty-learn" target="1.8" />
       <module name="spring" target="1.8" />
+      <module name="thrift-learn" target="1.8" />
       <module name="tool" target="1.8" />
       <module name="web-server" target="1.8" />
     </bytecodeTargetLevel>

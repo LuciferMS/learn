@@ -1,8 +1,6 @@
 package base.Nums;
 
 import org.junit.Test;
-import org.omg.PortableInterceptor.INACTIVE;
-import sun.misc.VM;
 
 import java.lang.reflect.Field;
 import java.util.Properties;

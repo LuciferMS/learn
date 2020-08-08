@@ -36,6 +36,7 @@
         <module>netty-learn</module>
         <module>web-server</module>
         <module>tool</module>
+        <module>thrift-learn</module>
     </modules>
 
     <dependencies>
