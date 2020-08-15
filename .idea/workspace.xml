@@ -36,13 +36,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98d194da-351c-4c8e-aa91-64ae1fffa864" name="Default" comment="单例模式懒汉式&#10;spring依赖">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/Solution36.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/thriftCompiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/base/src/main/java/com/learn/base/java/collection/BitSetLearn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thrift-learn/learn.idl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thrift-learn/thrift-learn.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/Solution376.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/main/java/com/learn/base/algorithm/leetcode/Solution376.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/src/main/java/com/learn/base/java/concurrent/thread/UnsafeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/main/java/com/learn/base/java/concurrent/thread/UnsafeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/src/test/java/base/Nums/IntegerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/test/java/base/Nums/IntegerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/src/test/java/base/thread/UnsafeTester.java" beforeDir="false" afterPath="$PROJECT_DIR$/base/src/test/java/base/thread/UnsafeTester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,33 +75,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>ThreadLocalMap</find>
-      <find>bit</find>
-      <find>runnerOffset</find>
-      <find>runner</find>
-      <find>NEW</find>
-      <find>state</find>
-      <find>ti</find>
-      <find>tid</find>
-      <find>unpark</find>
-      <find>classLoa</find>
-      <find>classLoader</find>
-      <find>contains</find>
-      <find>invoke</find>
-      <find>AnnotationParse</find>
-      <find>LinkedHashMap</find>
-      <find>chars</find>
-      <find>toString</find>
-      <find>format</find>
-      <find>bitC</find>
-      <find>head</find>
-      <find>to</find>
-      <find>toCode</find>
-      <find>ArrayC</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -134,7 +105,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.general" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -229,17 +200,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -463,6 +423,9 @@
       <workItem from="1596354660472" duration="319000" />
       <workItem from="1596556008015" duration="6414000" />
       <workItem from="1596730525958" duration="157000" />
+      <workItem from="1596859120142" duration="336000" />
+      <workItem from="1596859465291" duration="947000" />
+      <workItem from="1596894020563" duration="5700000" />
     </task>
     <task id="LOCAL-00001" summary="修改了一下redis.md，格式上的">
       <created>1556969954203</created>
@@ -550,6 +513,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="单例模式懒汉式&#10;spring依赖" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="440" y="94" key="#Project_Structure" timestamp="1596894096205">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1596894096205" />
     <state x="452" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1596730655763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -574,10 +541,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="481" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1596644072965" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1596730645452">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1596859458006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596730645452" />
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596859458006" />
+    <state x="332" y="160" key="new project wizard" timestamp="1596859204839">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="332" y="160" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1596859204839" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1596556159762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
